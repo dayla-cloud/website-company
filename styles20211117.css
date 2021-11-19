@@ -70,6 +70,7 @@ body {
   margin: var(--header-height) 0 0 0;
   color: var(--first-color);
   -ms-overflow-style: none;
+  overflow-y: overlay;
 }
 /* 
 ::-webkit-scrollbar {
