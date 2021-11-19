@@ -10,15 +10,12 @@ const btn = document.querySelectorAll(".description_appealpoint");
 
 function showdetail(e) {
   e.currentTarget.classList.toggle("open-appealpoint-height");
+  const p = document.querySelectorAll("description_appealpoint_details");
 }
 
-const p = document.querySelectorAll(".description_appealpoint_details");
-function show(event) {
-  event.currentTarget.classList.toggle("open-appeal-detail");
-}
+// const p = document.querySelectorAll(".description_appealpoint_details");
+// function show(event) {
+//   event.currentTarget.classList.toggle("open-appeal-detail");
+// }
 
 btn.forEach(n => n.addEventListener("click", showdetail));
-
-if (showdetail) {
-  p;
-}

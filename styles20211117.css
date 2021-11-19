@@ -20,7 +20,7 @@
   --body-font: "Noto Sans JP", sans-serif;
   --normal-font-size: 0.875rem;
   --small-font-size: 0.75rem;
-
+  --bigtitle-font-size: 2.5rem;
   --h1-font-size: 1.875rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.313rem;
@@ -43,7 +43,8 @@
   --section-margin: 9.375rem;
   /* between title and dscrp in IMG BUTTON */
   --img-title-margin: 0.625rem;
-
+  /* between product detail img & text margin */
+  --product-detail-img-margin: 2rem;
   /* z index */
   --z-fixed: 100;
   --z-page: 10;
@@ -519,16 +520,18 @@ input {
   height: 50vh;
   width: 100%;
   overflow: hidden;
+  margin: var(--product-detail-img-margin) auto;
 }
 
 .v_youtube {
   object-position: center;
 }
 
-.productdetail > section > span {
-  font-size: var(--h1-font-size);
+.productdetail_bigtitle {
+  font-size: var(--bigtitle-font-size);
   font-weight: var(--font-bold);
   text-align: center;
+  margin-bottom: var(--contents-margin);
 }
 
 .productdetail > section > h1 {
@@ -536,6 +539,7 @@ input {
   font-weight: var(--font-bold);
   text-align: center;
   line-height: var(--h1-font-size);
+  margin-bottom: var(--contents-margin);
 }
 
 .productdetail > section > h1 > span {
@@ -547,6 +551,15 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.productdetail_text_p {
+  margin: auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 300;
 }
 
 .description_appeallist {
@@ -595,4 +608,46 @@ input {
 
 .open-appealpoint-height {
   height: 190px;
+}
+
+.img_contents {
+  width: 100%;
+  overflow: hidden;
+  margin: var(--product-detail-img-margin) auto;
+}
+
+/* gif BG*********************gif BG */
+.productdetail_gif_bg_p2_1 {
+  background-image: url(./img/product/acsl0003/p2.jpg);
+  background-size: cover;
+}
+
+.productdetail_gif_bg_p8_1 {
+  background-image: url(./img/product/acsl0003/p8.jpg);
+  background-size: cover;
+}
+
+/* scroll gallery ***********scroll gallery*/
+.scroll_gallery {
+  width: 110%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-oveflow-scrolling: auto;
+  /* -ms-overflow-style: -ms-autohiding-scrollbar; */
+}
+
+.scroll_gallery::-webkit-scrollbar {
+  height: 1rem;
+}
+
+.scroll_gallery_img {
+  flex: 0 0 auto;
+  margin-right: 1rem;
+  width: 300px;
+  zoom: 1;
+}
+
+.scroll_gallery_img > img {
+  object-fit: cover;
 }
