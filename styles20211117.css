@@ -594,20 +594,25 @@ input {
 }
 
 .description_appealpoint {
-  height: 60px;
+  height: 170px;
   background-color: var(--first-color-fourth);
   padding: 1rem;
   text-align: center;
 }
 
-.description_appeallist :hover {
+.description_appealpoint_details {
+  font-weight: var(--font-regular);
+  font-size: var(--small-font-size);
+}
+
+/* .description_appeallist :hover {
   filter: brightness(70%);
-  /* -webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease; */
-}
+  transition: all 0.3s ease;
+} */
 
 .description_appealpoint > span {
   font-size: var(--h4-font-size);
@@ -617,18 +622,6 @@ input {
 .description_appealpoint > p {
   text-align: left;
   margin-top: 1rem;
-}
-
-.description_appealpoint_details {
-  display: none;
-}
-
-.open-appeal-detail {
-  display: block;
-}
-
-.open-appealpoint-height {
-  height: 190px;
 }
 
 .img_contents {
@@ -704,4 +697,76 @@ input {
   .table_spec_empty {
     display: none;
   }
+}
+
+.otherproduct {
+  background-color: var(--first-color-third);
+  margin-top: var(--section-margin);
+}
+
+.otherproduct_title {
+  text-align: center;
+  font-size: var(--h4-font-size);
+}
+
+/* ABOUT ************************* ABOUT */
+
+.about_member_card {
+  border: solid 0.5px var(--first-color-fourth);
+  width: 220px;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5rem;
+  padding: 1rem;
+}
+
+.about_member_img {
+  overflow: hidden;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.about_member_name {
+  font-size: var(--h4-font-size);
+  font-weight: var(--font-bold);
+  padding: 0.5rem 0;
+}
+
+.about_member_bar {
+  width: 37px;
+  height: 3px;
+  background-color: black;
+}
+
+.about_member_position {
+  color: var(--first-color-second);
+}
+
+.about_member_list {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, 220px);
+  row-gap: 1rem;
+  column-gap: 1rem;
+  margin: 0 auto;
+}
+
+.about_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.about_table tr:nth-child(odd) {
+  background-color: var(--first-color-fourth);
+}
+
+.about_table_title {
+  text-align: left;
+  padding: 0.5rem 1rem;
+  font-weight: var(--font-regular);
 }
