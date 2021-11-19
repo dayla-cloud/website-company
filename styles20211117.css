@@ -714,10 +714,11 @@ input {
 .about_member_card {
   border: solid 0.5px var(--first-color-fourth);
   width: 220px;
+  height: 330px;
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   row-gap: 0.5rem;
   padding: 1rem;
@@ -728,6 +729,11 @@ input {
   width: 180px;
   height: 180px;
   border-radius: 50%;
+  text-align: center;
+  background-color: var(--first-color-fourth);
+}
+.about_member_img > img {
+  object-fit: cover;
 }
 
 .about_member_name {
@@ -757,16 +763,42 @@ input {
 }
 
 .about_table {
-  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 700px));
+  column-gap: 1rem;
+}
+
+.about_table_tb {
   border-collapse: collapse;
 }
 
-.about_table tr:nth-child(odd) {
+.about_table_tb tr:nth-child(odd) {
   background-color: var(--first-color-fourth);
 }
 
-.about_table_title {
-  text-align: left;
+.about_table_body > tr > td {
   padding: 0.5rem 1rem;
+}
+
+.about_table_title {
+  width: 90px;
+  vertical-align: top;
+}
+
+.about_table_description {
   font-weight: var(--font-regular);
+}
+
+.recruit-widget {
+  margin-top: 3rem;
+}
+
+.recruit,
+.about {
+  align-items: center;
+}
+
+.recruit > p {
+  text-align: center;
 }
