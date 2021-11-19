@@ -13,7 +13,7 @@
   --active-color: hsl(201, 83%, 40%);
   --positive-color: hsl(201, 100%, 50%);
   --button-youtube-color: hsl(1, 99%, 45%);
-  --button-bg-color: hsl(164, 97%, 24%);
+  --button-bg-color: hsl(181, 38%, 43%);
 
   /* font and typography */
 
@@ -71,10 +71,10 @@ body {
   color: var(--first-color);
   -ms-overflow-style: none;
 }
-
+/* 
 ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 html,
 body {
@@ -467,6 +467,38 @@ input {
   color: var(--positive-color);
 }
 
+/* BUTTON *******************BUTTON */
+.button {
+  background-color: var(--button-bg-color);
+  text-align: center;
+  text-decoration: none;
+  color: var(--body-bg-color);
+  font-size: var(--body-font);
+  font-weight: var(--font-semi-bold);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button > a {
+  color: var(--body-bg-color);
+}
+
+.button_img_overlay {
+  width: 90%;
+  height: 100px;
+  margin: 0.5rem auto;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.button_img_overlay > img {
+  object-fit: cover;
+}
+
 /* CONTACT ***********************CONTACT */
 
 .contact_list {
@@ -477,17 +509,6 @@ input {
   align-content: center;
   row-gap: 10px;
   column-gap: 10px;
-}
-
-.button {
-  background-color: var(--first-color-second);
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  font-size: var(--body-font);
-  font-weight: var(--font-regular);
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
 }
 
 .contact_warning,
@@ -629,16 +650,12 @@ input {
 
 /* scroll gallery ***********scroll gallery*/
 .scroll_gallery {
-  width: 110%;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  -webkit-oveflow-scrolling: auto;
-  /* -ms-overflow-style: -ms-autohiding-scrollbar; */
-}
-
-.scroll_gallery::-webkit-scrollbar {
-  height: 1rem;
+  /* -webkit-oveflow-scrolling: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar; */
 }
 
 .scroll_gallery_img {
@@ -650,4 +667,41 @@ input {
 
 .scroll_gallery_img > img {
   object-fit: cover;
+}
+
+/* table spec**************** table spec */
+
+.spectest {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
+  column-gap: 1rem;
+}
+
+.table_spec_category,
+.table_spec_description {
+  text-align: left;
+  padding: 0.5rem 1rem;
+  font-weight: var(--font-regular);
+}
+.table_spec_category {
+  background-color: var(--first-color-third);
+  width: 30%;
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.table_spec_description {
+  background-color: var(--first-color-fourth);
+}
+
+.table_spec_empty {
+  visibility: hidden;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 847px) {
+  .table_spec_empty {
+    display: none;
+  }
 }
