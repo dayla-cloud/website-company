@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles20211117.css" />
+    <title>Azmee | お問い合わせ</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <a href="./index.html"
+          ><img
+            src="./asset/all/svg/logo black.svg"
+            alt="azmee logo"
+            class="nav_logo"
+        /></a>
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#ABOUT" class="nav_link">会社概要</a>
+            </li>
+            <li class="nav_item">
+              <a href="./product.html" class="nav_link">製品一覧</a>
+            </li>
+            <li class="nav_item">
+              <a href="./release.html" class="nav_link">最新情報</a>
+            </li>
+            <li class="nav_item">
+              <a href="./download.html" class="nav_link">ダウンロード</a>
+            </li>
+            <li class="nav_item">
+              <a href="./contact.html" class="nav_link">問い合わせ</a>
+            </li>
+          </ul>
+          <div class="nav_social">
+            <a
+              href="https://www.youtube.com/channel/UCqoV7O4VHDJ4Fj866LKyQgA"
+              class="nav_social_link"
+            >
+              <i class="ri-youtube-line"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/azmee.inc/"
+              class="nav_social_link"
+            >
+              <i class="ri-facebook-line"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/azmee_inc/"
+              class="nav_social_link"
+            >
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="https://twitter.com/Azmee_Inc" class="nav_social_link">
+              <i class="ri-twitter-line"></i>
+            </a>
+          </div>
+          <i class="ri-close-line nav_close" id="nav-close"></i>
+        </div>
+
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- hero fixed-->
+      <section class="herosection">
+        <div class="hero"></div>
+      </section>
+
+      <!-- main container : warning message & agreement -->
+
+      <section class="section container contact_warning">
+        <h3 class="contact_warning_title">個人情報の取り扱いについて</h3>
+        <p class="contact_warning_description section_description">
+          アズミー株式会社以外における情報利用は一切いたしません。<br />
+          ご入力いただきました情報をもとに、アズミー株式会社よりご連絡を差し上げることがございますので、改めご了承ください。
+        </p>
+        <div class="contact_warning_link">
+          <a href="./security_contact.html" class="contact_warning_a"
+            >アズミー株式会社個人情報の取り扱いについてはこちら</a
+          >
+        </div>
+        <div class="check">
+          <label
+            ><input type="checkbox" id="checkbox-contact" /> 同意します</label
+          >
+        </div>
+      </section>
+
+      <!-- main container : contact button -->
+      <section class="section container toggle_page" id="toggle-page">
+        <div class="contact">
+          <h1 class="contact_title section_title">お問い合わせ</h1>
+          <p class="section_description">
+            お問い合わせへのご回答にはできるだけ迅速に対応をさせていだきますが、内容により時間がかかることがあります。予めご了承ください。
+          </p>
+        </div>
+        <div class="contact section_contentlist">
+          <!-- buttons grid-->
+          <div class="contact_list">
+            <!-- button s -->
+            <button
+              class="button button_normal"
+              type="button"
+              onclick="window.open('https://form.run/@azmee-support-product');"
+            >
+              製品に関するお問い合わせ
+            </button>
+            <!-- button e -->
+            <!-- button s -->
+            <button
+              class="button button_normal"
+              type="button"
+              onclick="window.open('https://form.run/@azmee-customer')"
+              ;
+            >
+              業販やその他のお問い合わせ
+            </button>
+            <!-- button e -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section footer">
+      <div class="container">
+        <div class="footer__rights">
+          <p class="footer__copy">
+            &#169; 2021 Azmee Inc. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./header.js"></script>
+  <script src="./checkbox.js"></script>
+</html>
