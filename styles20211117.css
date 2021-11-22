@@ -135,6 +135,7 @@ input {
 
 .main {
   overflow-x: hidden;
+  margin: var(--header-height) 0 0 0;
 }
 
 /************************* HEADER */
@@ -371,16 +372,11 @@ input {
 .hero {
   width: auto;
   height: 60vh;
+  min-height: 300px;
 }
 
 .hero-product-camera {
   background-color: var(--hero-background-color);
-}
-
-.hero > img {
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 .hero > video {
@@ -388,6 +384,32 @@ input {
   object-fit: cover;
   object-position: center;
   filter: brightness(170%) opacity(70%);
+}
+
+/* HERO : option *************************************  HERO : option */
+
+.herosection-option {
+  background: linear-gradient(
+    to bottom,
+    var(--first-color-second),
+    var(--body-bg-color)
+  );
+}
+
+.hero-product-option {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+}
+
+.hero-product-option-overlay {
+  width: 50%;
+  overflow: hidden;
+}
+
+.hero-product-option-img {
+  object-fit: cover;
 }
 
 /* HERO *********************************** HERO : font*/
@@ -402,6 +424,10 @@ input {
 .hero-description > h2 {
   color: var(--body-bg-color);
   font-weight: var(--font-bold);
+}
+
+.hero-description-boxes-camera > h1,
+.hero-description-boxes-camera > h2 {
   text-shadow: 1px 2px 3px var(--first-color-second);
 }
 
@@ -455,17 +481,19 @@ input {
   }
 
   .hero-desciription-boxes-a {
+    font-size: var(--normal-font-size);
     /* border: solid 0.25px var(--body-bg-color); */
     /* backdrop-filter: blur(7px); */
     width: 100%;
-    /* height: 68px;
-    display: flex;
+    height: 48px;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     font-weight: var(--font-semi-bold);
     color: var(--body-bg-color); */
   }
 }
+
 /* PRODUCT ******************************PRODUCT */
 /* product buttons */
 
@@ -695,7 +723,7 @@ input {
 
 @media screen and (max-width: 600px) {
   :root {
-    --bigtitle-font-size: 2rem;
+    --bigtitle-font-size: 1.75rem;
   }
 
   .productdetail_bigtitle {
@@ -708,7 +736,7 @@ input {
   }
 
   .productdetail_bigtitle > span {
-    font-size: calc(var(--bigtitle-font-size) - 0.75rem);
+    font-size: calc(var(--bigtitle-font-size) - 0.25rem);
     line-height: calc(var(--bigtitle-font-size));
     font-weight: var(--font-bold);
   }
