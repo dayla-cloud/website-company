@@ -82,35 +82,23 @@
     <main class="main productdetail">
       <!-- hero fixed-->
       <section class="herosection">
-        <div class="hero hero-product-camera">
+        <div class="hero hero-mainproduct">
           <!-- <img src="../img/product/acsl0003/main1.png" alt="" /> -->
           <video autoplay loop muted playsinline>
             <source
-              src="../video/acsl-0003-video.mp4"
+              src="../video/acsl-0003-video-lowc.mp4"
               type="video/mp4
            "
             />
           </video>
         </div>
-        <div class="container">
-          <div class="hero-description hero-description-boxes-camera">
-            <h1>大型トラック用 安全AIカメラシステム</h1>
-            <h2>品番：ACSL-0003</h2>
-            <div class="hero-description-boxes">
-              <div class="hero-desciription-boxes-a">
-                <p>DC12V<br />DC24V</p>
-              </div>
-              <div class="hero-desciription-boxes-a">
-                <p>NTSC方式</p>
-              </div>
-              <div class="hero-desciription-boxes-a">
-                <p>３段階の<br />検知範囲</p>
-              </div>
-              <div class="hero-desciription-boxes-a">
-                <p>IP68</p>
-              </div>
-            </div>
-          </div>
+        <div class="hero-description hero-description-boxes-camera">
+          <h2 class="hero-description-boxes-camera-subtitle">
+            大型トラック用安全AIカメラシステム
+          </h2>
+          <h1 class="hero-description-boxes-camera-title">
+            左巻き込み事故の予防
+          </h1>
         </div>
       </section>
       <!-- main container : product-->
@@ -119,16 +107,61 @@
           左巻き込み事故の予防<br /><span>大型トラック用</span>
         </p>
       </section> -->
+
       <section class="section container">
-        <p class="productdetail_bigtitle">
-          左巻き込み事故の予防<br /><span>大型トラック用</span>
-        </p>
-        <h1>特徴</h1>
+        <div class="productdetail_media">
+          <p class="productdetail_media_title">メディア紹介</p>
+
+          <!-- <h1>メディア紹介</h1> -->
+          <div class="productdetail_media_list">
+            <!-- media link s -->
+            <a
+              href="https://www.nikkan.co.jp/articles/view/597852"
+              target="_blank"
+            >
+              <div class="productdetail_media_overlay">
+                <img
+                  src="../img/media/SVG/media_nikkan.svg"
+                  alt="日刊工業新聞のロゴ"
+                />
+              </div>
+            </a>
+            <!-- media link e -->
+            <!-- media link s -->
+            <a
+              href="https://www.lnews.jp/2021/07/n0709305.html"
+              target="_blank"
+            >
+              <div class="productdetail_media_overlay">
+                <img src="../img/media/SVG/media_lnews.svg" alt="LNEWSのロゴ" />
+              </div>
+            </a>
+            <!-- media link e -->
+            <!-- media link s -->
+            <a
+              href="https://robotstart.info/2021/07/09/heavy-truck-ai-camera.html"
+              target="_blank"
+            >
+              <div class="productdetail_media_overlay">
+                <img
+                  src="../img/media/SVG/media_robosta.svg"
+                  alt="ロボスタのロゴ"
+                />
+              </div>
+            </a>
+            <!-- media link e -->
+          </div>
+        </div>
+        <h1 class="productdetail_title">主な特長</h1>
         <p
-          class="description_appeallist_toggle productdetail_text_p container"
+          class="
+            description_appeallist_toggle
+            productdetail_description
+            container
+          "
           id="description-appeallist-toggle"
         >
-          ▼ 詳しい説明で見る
+          詳しい内容を見る
         </p>
 
         <div class="description_appeallist">
@@ -270,11 +303,12 @@
         </div>
       </section>
       <section class="section container">
-        <h1>
-          <span>大型車で多く発生する左巻き込み事故を</span
+        <h1 class="productdetail_title">
+          <span class="productdetail_subtitle"
+            >大型車で多く発生する左巻き込み事故を</span
           ><br />AIカメラで効果的に予防
         </h1>
-        <p class="productdetail_text_p container">
+        <p class="productdetail_description container">
           新開発した第2世代 Embedded AI
           の処理能力を生かし、アフターパーツでありながら協定規則
           第151号に規定された性能を満足しており、大型トラック左側ミラーのブラケット部に取り付けることで、組み込まれた
@@ -299,7 +333,7 @@
             alt="acsl-0003 大型トラック用AIカメラ 装着画像"
           />
         </div> -->
-        <p class="productdetail_text_p productdetail_text_p_inside">
+        <p class="productdetail_description productdetail_text_p_inside">
           旧来の認知技術を用いた左巻き込み事故防止システムに比べ大幅に導入コストを低減しており、システム構成もシンプルとなっています。様々な大型トラック事業者様において、所有する全車両の「標準的な安全装置」として大量導入することができ、所有車両の装備品の違いによる運用の煩雑さを避けることができ、トラックドライバーへの安全教育も均質化できるメリットがあります。また、オプションで録画装置やデジタルタコグラフ、各種通信機器を用いた集中管理システムなどへの連携が可能です。
         </p>
         <div class="img_contents">
@@ -311,8 +345,11 @@
         </div>
       </section>
       <section class="section container">
-        <h1><span>人や車両の接近を</span><br />警告灯・警告音でお知らせ</h1>
-        <p class="productdetail_text_p">
+        <h1 class="productdetail_title">
+          <span class="productdetail_subtitle">人や車両の接近を</span
+          ><br />警告灯・警告音でお知らせ
+        </h1>
+        <p class="productdetail_description">
           検知対象の検知し、危険度に応じて３段階の警告灯・２段階の警告音でオペレーターにお知らせします。
           自車両の速度が０〜25km/hの場合は、0.3秒ごとに点滅し、25〜40km/hの場合は、常に点灯します。
         </p>
@@ -334,8 +371,8 @@
         </div>
       </section>
       <section class="section container">
-        <h1>検知対象</h1>
-        <p class="productdetail_text_p">
+        <h1 class="productdetail_title">検知対象</h1>
+        <p class="productdetail_description">
           歩行者、自転車、２輪車、自動車を検知します。相手が人や自転車、バイクなどの場合、自車両との相対速度が約20km/h以下の場合に警告し、相手が乗用車などの大きい場合は自車両の相対速度が40km/h以下の場合に警告します。
         </p>
         <div class="img_contents">
@@ -344,8 +381,8 @@
         </div>
       </section>
       <section class="section container">
-        <h1>検知範囲</h1>
-        <p class="productdetail_text_p">
+        <h1 class="productdetail_title">検知範囲</h1>
+        <p class="productdetail_description">
           警告は下記の範囲に危険がある場合にお知らせします。カメラのレンズが地面から高さ2m以上に取り付けた場合は下記の検知範囲より広くなります。より広い範囲を検知対象としたい場合はできるだけ高い位置に取り付けしてください。接近（緑）、注意（黄）、危険（赤）に応じて警告灯の点灯、及び警告音がなります。
         </p>
         <div class="img_contents">
@@ -353,8 +390,12 @@
         </div>
       </section>
       <section class="section container">
-        <h1><span>キャリブレーションレスによって</span><br />装着が簡単</h1>
-        <p class="productdetail_text_p">
+        <h1 class="productdetail_title">
+          <span class="productdetail_subtitle"
+            >キャリブレーションレスによって</span
+          ><br />装着が簡単
+        </h1>
+        <p class="productdetail_description">
           最低限の装着基準を満たせばキャリブレーションレスで歩行者や自転車、小型バイク、周囲の自動車などを歩道やガードレールなどの背景から分離し、危険な動きだけを検知する能力を発揮できます。これにより社内整備士やお付き合いのある整備業者様で簡単に取付が可能です。
         </p>
         <div class="img_contents">
@@ -365,8 +406,11 @@
         </div>
       </section>
       <section class="section container">
-        <h1><span>AI 専門知識不要！</span><br />簡単取付可能なAIカメラ！</h1>
-        <p class="productdetail_text_p">
+        <h1 class="productdetail_title">
+          <span class="productdetail_subtitle">AI 専門知識不要！</span
+          ><br />簡単取付可能なAIカメラ！
+        </h1>
+        <p class="productdetail_description">
           詳しい仕様などはお問い合わせください。
         </p>
         <div class="img_contents">
@@ -374,11 +418,11 @@
         </div>
       </section>
       <section class="section container">
-        <h1>
-          <span> 赤外線ライト搭載で</span><br />
+        <h1 class="productdetail_title">
+          <span class="productdetail_subtitle"> 赤外線ライト搭載で</span><br />
           15lux までの暗視性能
         </h1>
-        <p class="productdetail_text_p">
+        <p class="productdetail_description">
           カメラ本体に広範囲照射が可能な赤外線ライトを搭載。15lux
           という暗闇でも確実な検知を可能にします。
           ※気象条件や周囲状況によって変動しますのでご了承ください。
@@ -388,7 +432,8 @@
         </div>
       </section>
       <section class="section container">
-        <h1>ギャラリー</h1>
+        <h1 class="productdetail_title">ギャラリー</h1>
+        <div class="scroll_gallery_icon"><div class="icon-scroll"></div></div>
         <div class="scroll_gallery">
           <div class="scroll_gallery_img">
             <img
@@ -433,7 +478,7 @@
         </div>
       </section>
       <section class="section container">
-        <h1>仕様</h1>
+        <h1 class="productdetail_title">仕様</h1>
         <div class="spectest">
           <table class="table_spec">
             <tbody class="table_spec_body">
@@ -592,8 +637,8 @@
         </div>
       </section>
       <section class="section container">
-        <h1>価格・お問い合わせ</h1>
-        <p class="productdetail_text_p">
+        <h1 class="productdetail_title">価格・お問い合わせ</h1>
+        <p class="productdetail_description">
           価格はすべてオープンプライスです。<br />詳しくは弊社のメールフォームもしくはお近くの整備業者様へお問い合わせください。<br /><br />
           ACSL-0003　大型トラック用安全AIカメラシステムセット　<br />JAN：4580059640199
         </p>
@@ -613,44 +658,7 @@
           </div>
         </div>
       </section>
-      <section class="section container">
-        <!-- <h1>メディア紹介</h1> -->
-        <div class="productdetail_media">
-          <!-- media link s -->
-          <a
-            href="https://www.nikkan.co.jp/articles/view/597852"
-            target="_blank"
-          >
-            <div class="productdetail_media_overlay">
-              <img
-                src="../img/media/SVG/media_nikkan.svg"
-                alt="日刊工業新聞のロゴ"
-              />
-            </div>
-          </a>
-          <!-- media link e -->
-          <!-- media link s -->
-          <a href="https://www.lnews.jp/2021/07/n0709305.html" target="_blank">
-            <div class="productdetail_media_overlay">
-              <img src="../img/media/SVG/media_lnews.svg" alt="LNEWSのロゴ" />
-            </div>
-          </a>
-          <!-- media link e -->
-          <!-- media link s -->
-          <a
-            href="https://robotstart.info/2021/07/09/heavy-truck-ai-camera.html"
-            target="_blank"
-          >
-            <div class="productdetail_media_overlay">
-              <img
-                src="../img/media/SVG/media_robosta.svg"
-                alt="ロボスタのロゴ"
-              />
-            </div>
-          </a>
-          <!-- media link e -->
-        </div>
-      </section>
+
       <section class="section otherproduct">
         <p class="otherproduct_title">関連商品</p>
         <!-- buttons grid-->
