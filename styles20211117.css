@@ -154,7 +154,7 @@ input {
     /* font and typography */
     --body-font: "Noto Sans JP", sans-serif;
     --normal-font-size: 1rem;
-    --small-font-size: 0.75rem;
+    --small-font-size: 0.8rem;
     --bigtitle-font-size: 3.5rem;
     --h1-font-size: 2rem;
     --h2-font-size: 1.5rem;
@@ -274,7 +274,7 @@ input {
 }
 
 .nav_social_link {
-  color: var(--first-color-third);
+  color: var(--first-color);
   font-size: 1rem;
   transition: all 100ms ease-in;
 }
@@ -302,6 +302,7 @@ input {
 } */
 
 /* media query */
+/* web size */
 
 @media screen and (min-width: 885px) {
   /* body {
@@ -333,6 +334,10 @@ input {
     margin: auto;
     padding-left: 1rem;
     border-left: 0.5px solid var(--first-color-fourth);
+  }
+
+  .nav_social_link:hover {
+    color: var(--first-color-third);
   }
 
   .nav_close,
@@ -797,7 +802,7 @@ input {
 .option_gallery_img {
   width: 100%;
   background-color: var(--first-color-second);
-  border: solid 1px var(--first-color-second);
+  border: solid 1px var(--first-color-third);
 }
 
 .option_gallery_figcaption {
@@ -813,24 +818,24 @@ input {
 
 .components_list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 180px);
+  grid-template-columns: repeat(auto-fit, 150px);
   gap: 20px;
   justify-content: center;
 }
 
 .component_card {
-  width: 180px;
+  width: 150px;
 }
 
 .component_overlay {
-  width: 180px;
-  height: 180px;
-  border: solid 0.5px var(--first-color-second);
+  width: 150px;
+  height: 150px;
+  border: solid 0.25px var(--first-color-third);
   display: flex;
 }
 
 .component_overlay > img {
-  width: 160px;
+  width: 130px;
   margin: auto;
 }
 
@@ -842,6 +847,7 @@ input {
   padding-top: 0.5rem;
   font-weight: var(--font-regular);
   text-align: center;
+  font-size: var(--small-font-size);
 }
 
 /* PRODUCT ******************************PRODUCT */
