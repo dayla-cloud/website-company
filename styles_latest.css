@@ -498,7 +498,8 @@ input {
   margin-bottom: 1rem;
 }
 
-.hero-mainproduct > video {
+.hero-mainproduct > video,
+.hero-mainproduct > img {
   object-fit: cover;
 }
 
@@ -671,6 +672,7 @@ input {
 .hero-product-option-overlay {
   width: 100%;
   overflow: hidden;
+  display: flex;
 }
 
 .hero-product-option-img {
@@ -1130,6 +1132,23 @@ input {
 
 .v_contents_inside {
   margin: 20px 0;
+}
+
+.media_list {
+  width: 280px;
+  margin: auto;
+}
+
+.media_logo_overlay {
+  width: 280px;
+  height: 130px;
+  overflow: hidden;
+  display: flex;
+}
+
+.media_logo_overlay > img {
+  object-fit: cover;
+  margin-top: -20px;
 }
 
 .productdetail_link_a {
