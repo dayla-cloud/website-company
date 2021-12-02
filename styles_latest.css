@@ -340,7 +340,7 @@ input {
 
   .nav_social_link {
     color: var(--first-color);
-    font-size: 2rem;
+    font-size: 1rem;
     transition: all 100ms ease-in;
   }
 
