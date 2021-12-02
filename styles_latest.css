@@ -338,6 +338,12 @@ input {
     border-left: 0.5px solid var(--first-color-fourth);
   }
 
+  .nav_social_link {
+    color: var(--first-color);
+    font-size: 2rem;
+    transition: all 100ms ease-in;
+  }
+
   .nav_social_link:hover {
     color: var(--first-color-third);
   }
