@@ -19,6 +19,13 @@
       href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;300;400;500&display=swap"
       rel="stylesheet"
     />
+    <!-- Swiper / slide -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
     <!-- metatag -->
     <meta
       name="title"
@@ -43,7 +50,7 @@
     />
     <meta
       property="og:image"
-      content="http://www.azmee.co.jp/img/metatag/description.png"
+      content="http://www.azmee.co.jp/img/metatag/metatag.png"
     />
     <meta peoperty="og:image:width" content="1200" />
     <meta peoperty="og:image:height" content="630" />
@@ -61,7 +68,7 @@
     />
     <meta
       name="twitter:image"
-      content="http://www.azmee.co.jp/img/metatag/description.png"
+      content="http://www.azmee.co.jp/img/metatag/metatag.png"
     />
     <meta name="twitter:image:width" content="1200" />
     <meta name="twitter:image:height" content="630" />
@@ -70,12 +77,12 @@
     <!-- favicon -->
     <link
       rel="shortcut icon"
-      href="http://www.azmee.co.jp/img/favicon/favicon.ico"
+      href="http://www.azmee.co.jp/img/favicon/9696.png"
       type="image/x-icon"
     />
     <link
       rel="shortcut icon"
-      href="./img/favicon/favicon.ico"
+      href="./img/favicon/9696.png"
       type="image/x-icon"
     />
 
@@ -84,7 +91,8 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-
+    <!-- style -->
+    <link rel="stylesheet" href="./swiper_home.css" />
     <link rel="stylesheet" href="./styles_latest.css" />
     <title>アズミー株式会社 - 運送・建設現場向け安全AIカメラシステム</title>
   </head>
@@ -100,7 +108,7 @@
         <div class="nav_menu" id="nav-menu">
           <ul class="nav_list">
             <li class="nav_item">
-              <a href="./about.html" class="nav_link">会社概要</a>
+              <a href="./about.html" class="nav_link">企業情報</a>
             </li>
             <li class="nav_item">
               <a href="./product.html" class="nav_link">製品一覧</a>
@@ -148,57 +156,123 @@
     </header>
     <main class="main">
       <!-- hero fixed-->
-      <section class="herosection herosection_home">
-        <div class="hero_all"></div>
+      <section class="swiper">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide swiper-slide-acuc0004"
+            style="background-image: url(./img/landingpage/acuc0004.jpg)"
+          >
+            <a class="swiper-slide-text" href="./product/acsl-0003.html">
+              <p class="swiper-slide-text-big">
+                　<br />　<br />次世代器発売中<br /><span
+                  class="swiper-slide-text-sub"
+                  >安全AIカメラシステム</span
+                >
+              </p>
+              <div class="swiper-slide-text-button-more">
+                <i class="ri-arrow-right-circle-fill"></i>詳しく見る
+              </div>
+            </a>
+          </div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./img/landingpage/acsl0003.jpg)"
+          >
+            <a class="swiper-slide-text" href="./product/acsl-0003.html">
+              <p class="swiper-slide-text-big">
+                　<br />　<br />
+                大型トラック用<br /><span class="swiper-slide-text-sub"
+                  >安全AIカメラシステム</span
+                >
+              </p>
+              <div class="swiper-slide-text-button-more">
+                <i class="ri-arrow-right-circle-fill"></i>詳しく見る
+              </div>
+            </a>
+          </div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./img/landingpage/acsl0001.jpg)"
+          >
+            <a class="swiper-slide-text" href="./product/acsl-0003.html">
+              <p class="swiper-slide-text-big">
+                　<br />　<br />
+                次世代器発売中<br /><span class="swiper-slide-text-sub"
+                  >安全AIカメラシステム</span
+                >
+              </p>
+              <div class="swiper-slide-text-button-more">
+                <i class="ri-arrow-right-circle-fill"></i>詳しく見る
+              </div>
+            </a>
+          </div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./img/landingpage/azmee.png)"
+          >
+            <a class="swiper-slide-text" href="./about.html">
+              <img src="./img/common/logo_w.png" alt="" />
+              <p class="swiper-slide-text-big">
+                <span class="swiper-slide-text-sub-about"
+                  >名古屋市を拠点に活動するハードウェアベンチャーです。<br />運送・建設業向け安全AIカメラを開発しています。</span
+                >
+              </p>
+              <div class="swiper-slide-text-button-more">
+                <i class="ri-arrow-right-circle-fill"></i>詳しく見る
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </section>
       <!-- main container -->
-      <section class="section">
-        <div class="textalign container">
-          <h1 class="title">アズミー株式会社</h1>
-          <div class="title_bar"></div>
+      <section class="section container">
+        <h1 class="title textalign">アズミー株式会社</h1>
+        <div class="title_bar"></div>
 
-          <p class="description">
-            アズミー株式会社（Azmee
-            Inc.）は名古屋市を拠点に活動するハードウェアベンチャーです。X-aaS（X
-            - as a Service）が求められるいま、世界は急速に IoT
-            デバイスが満ちていくでしょう。そして IoT
-            はひとりひとりによりそいながらそっと助けてくれる、かけがえなのない存在になるはずです。それはただの機械だったデバイスという存在が、人の心を理解して共感し、自律的に動く存在になり私たちを支え続けてくれる。私たちはそんな世界がいち早く訪れるようにしたいと考えています。
-          </p>
+        <p class="description description_home">
+          アズミー株式会社（Azmee
+          Inc.）は名古屋市を拠点に活動するハードウェアベンチャーです。X-aaS（X -
+          as a Service）が求められるいま、世界は急速に IoT
+          デバイスが満ちていくでしょう。そして IoT
+          はひとりひとりによりそいながらそっと助けてくれる、かけがえなのない存在になるはずです。それはただの機械だったデバイスという存在が、人の心を理解して共感し、自律的に動く存在になり私たちを支え続けてくれる。私たちはそんな世界がいち早く訪れるようにしたいと考えています。
+        </p>
+        <div class="more_box">
+          <a class="more_box_a" href="./about.html"
+            ><i class="ri-arrow-right-circle-fill"></i>企業情報</a
+          >
         </div>
-        <div class="imgalign container">
-          <img clas="imgalign_img" src="./img/about/p1.jpg" alt="" />
-        </div>
-        <div class="textalign container">
-          <h1 class="title">技術</h1>
-          <div class="title_bar"></div>
+        <h1 class="title textalign">技術</h1>
+        <div class="title_bar"></div>
 
-          <p class="description">
-            私たちアズミー株式会社は「Embedded AI
-            Technology」にフォーカスしています。Embedded AI とは Deeplearning
-            や機械学習などで得られたモデルを専用のSoCに焼き込み、ネットワーク不要かつ超低電力での動作を実現します。そして、ハードウェアと一体で設計することで、各ソリューションで要求される過酷な耐環境性能や安全性能、超小型化や超低電力化、そしてAIに求められる性能・能力を高い水準で同時に満たすことができる技術です。アズミー株式会社の
-            Embedded AI
-            は最小のハードウェア構成でソリューションが求める最高性能の AI
-            アルゴリズムを実装でき、かつネットワークに依存せずユニットコストやランニングコストも他方式のAIシステムよりも非常に安価に実現可能です。
-          </p>
+        <p class="description description_home">
+          私たちアズミー株式会社は「Embedded AI
+          Technology」にフォーカスしています。Embedded AI とは Deeplearning
+          や機械学習などで得られたモデルを専用のSoCに焼き込み、ネットワーク不要かつ超低電力での動作を実現します。そして、ハードウェアと一体で設計することで、各ソリューションで要求される過酷な耐環境性能や安全性能、超小型化や超低電力化、そしてAIに求められる性能・能力を高い水準で同時に満たすことができる技術です。アズミー株式会社の
+          Embedded AI は最小のハードウェア構成でソリューションが求める最高性能の
+          AI
+          アルゴリズムを実装でき、かつネットワークに依存せずユニットコストやランニングコストも他方式のAIシステムよりも非常に安価に実現可能です。
+        </p>
+        <div class="more_box">
+          <a class="more_box_a" href="./product.html"
+            ><i class="ri-arrow-right-circle-fill"></i>製品一覧</a
+          >
         </div>
-        <div class="imgalign container">
-          <img clas="imgalign_img" src="./img/about/p2.jpeg" alt="" />
-        </div>
-        <div class="imgalign container">
-          <img clas="imgalign_img" src="./img/about/p3.jpg" alt="" />
-        </div>
-        <div class="textalign container">
-          <h1 class="title">目標</h1>
-          <div class="title_bar"></div>
 
-          <p class="description">
-            私たちアズミー株式会社は Embedded AI
-            のいち早い社会実装を目指しています。そのために研究開発だけで終わらせることなく、デバイスの商品企画から販売まで全てを事業としています。私たちは人の心を感じ取れるデバイスを目指して開発に取り組み、そして私たち自らもひとびとの声に寄り添うことでより心の通ったデバイスへと
-            Embedded AI を進化させていきます。そして、それら Embedded AI
-            が搭載された無数のデバイスそれぞれが、やがて自律分散的にあなたに寄り添い、デバイスを意識することなく全てのひとびとが幸せを実感できる世界を構築してまいります。
-            「Intelligence for All Devices」からクールな「Physical
-            Platform」へ。
-          </p>
+        <h1 class="title textalign">目標</h1>
+        <div class="title_bar"></div>
+
+        <p class="description description_home">
+          私たちアズミー株式会社は Embedded AI
+          のいち早い社会実装を目指しています。そのために研究開発だけで終わらせることなく、デバイスの商品企画から販売まで全てを事業としています。私たちは人の心を感じ取れるデバイスを目指して開発に取り組み、そして私たち自らもひとびとの声に寄り添うことでより心の通ったデバイスへと
+          Embedded AI を進化させていきます。そして、それら Embedded AI
+          が搭載された無数のデバイスそれぞれが、やがて自律分散的にあなたに寄り添い、デバイスを意識することなく全てのひとびとが幸せを実感できる世界を構築してまいります。
+          「Intelligence for All Devices」からクールな「Physical Platform」へ。
+        </p>
+        <div class="more_box">
+          <a class="more_box_a" href="./release.html"
+            ><i class="ri-arrow-right-circle-fill"></i>最新情報</a
+          >
         </div>
       </section>
     </main>
@@ -213,5 +287,47 @@
       </div>
     </footer>
   </body>
+
   <script src="./header.js"></script>
+  <!-- Initializa Swiper -->
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script type="module">
+    import Swiper from "https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js";
+  </script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      loop: true,
+      freemode: true,
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
+
+      // autoplay
+      autoplay: {
+        delay: 5000,
+        stopOnLastSlide: false,
+      },
+
+      // fade effect
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true,
+      },
+
+      keyboard: {
+        emabled: true,
+        onlyInViewport: false,
+      },
+
+      mousewheel: {
+        invert: true,
+      },
+    });
+  </script>
 </html>

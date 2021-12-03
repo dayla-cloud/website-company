@@ -17,9 +17,16 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap"
       rel="stylesheet"
     />
-    <!-- google font //e// -->
+    <!-- Swiper / slide -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- style -->
     <link rel="stylesheet" href="../styles_latest.css" />
-    <title>Azmee | 大型トラック用安全AIカメラシステム</title>
+    <link rel="stylesheet" href="../swiper_product.css" />
+    <title>アズミー株式会社｜大型トラック用安全AIカメラシステム</title>
   </head>
   <body>
     <header class="header">
@@ -33,7 +40,7 @@
         <div class="nav_menu" id="nav-menu">
           <ul class="nav_list">
             <li class="nav_item">
-              <a href="../about.html" class="nav_link">会社概要</a>
+              <a href="../about.html" class="nav_link">企業情報</a>
             </li>
             <li class="nav_item">
               <a href="../product.html" class="nav_link">製品一覧</a>
@@ -451,48 +458,43 @@
         <h1 class="productdetail_title">ギャラリー</h1>
         <div class="title_bar"></div>
 
-        <div class="scroll_gallery_icon"><div class="icon-scroll"></div></div>
-        <div class="scroll_gallery">
-          <div class="scroll_gallery_img">
-            <img
-              src="../img/product/acsl0003/g1.jpg"
-              alt="大型トラック用AIカメラ取付画像"
-            />
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../img/product/acsl0003/g1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/product/acsl0003/g2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/product/acsl0003/g3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/product/acsl0003/g4.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/product/acsl0003/g5.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/product/acsl0003/g6.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/product/acsl0003/g7.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/product/acsl0003/g8.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/product/acsl0003/g9.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/product/acsl0003/g10.jpg" alt="" />
+            </div>
           </div>
-          <div class="scroll_gallery_img">
-            <img src="../img/product/acsl0003/g2.jpg" alt="本体の画像" />
-          </div>
-          <div class="scroll_gallery_img">
-            <img src="../img/product/acsl0003/g3.jpg" alt="センサーユニット" />
-          </div>
-          <div class="scroll_gallery_img">
-            <img src="../img/product/acsl0003/g4.jpg" alt="GPSケーブル" />
-          </div>
+          <div class="swiper-pagination"></div>
 
-          <div class="scroll_gallery_img">
-            <img src="../img/product/acsl0003/g5.jpg" alt="ブラケットセット" />
-          </div>
-
-          <div class="scroll_gallery_img">
-            <img src="../img/product/acsl0003/g6.jpg" alt="LED警告灯" />
-          </div>
-
-          <div class="scroll_gallery_img">
-            <img src="../img/product/acsl0003/g7.jpg" alt="LED警告灯　赤" />
-          </div>
-
-          <div class="scroll_gallery_img">
-            <img src="../img/product/acsl0003/g8.jpg" alt="LED警告灯　黄" />
-          </div>
-          <div class="scroll_gallery_img">
-            <img src="../img/product/acsl0003/g9.jpg" alt="LED警告灯　緑" />
-          </div>
-          <div class="scroll_gallery_img">
-            <img
-              src="../img/product/acsl0003/g10.jpg"
-              alt="LED警告灯　作動しない時"
-            />
-          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </section>
       <section class="section container">
@@ -715,4 +717,53 @@
   </body>
   <script src="../header.js"></script>
   <script src="../productdetail.js"></script>
+  <!-- initiallize swiper -->
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script type="module">
+    import Swiper from "https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js";
+  </script>
+  <script>
+    const swiper1 = new Swiper(".swiper", {
+      loop: true,
+      freemode: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
+
+      autoplay: {
+        delay: 3000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+        reverseDirection: false,
+      },
+
+      keyboard: {
+        emabled: true,
+        onlyInViewport: false,
+      },
+
+      mousewheel: {
+        invert: true,
+      },
+
+      breakpoints: {
+        767: {
+          slidesPerView: 3,
+        },
+        460: {
+          slidesPerView: 2,
+        },
+      },
+    });
+  </script>
 </html>

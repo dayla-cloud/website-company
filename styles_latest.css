@@ -296,13 +296,6 @@ input {
   margin-right: auto;
 }
 
-/* @media screen and (min-width: 1024px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-  }
-} */
-
 /* media query */
 /* web size */
 
@@ -356,6 +349,8 @@ input {
 
 /* HOME********************************* */
 
+/* textalign / title / title_bar ... */
+
 .textalign {
   margin: var(--contents-margin) auto;
   max-width: 600px;
@@ -377,13 +372,33 @@ input {
   background-color: black;
 }
 
-.title_bar_security {
-  margin: 0 auto var(--contents-half-margin-2);
+.description {
+  margin: auto;
+  max-width: 600px;
+  font-weight: 300;
 }
 
-.textalign > p {
-  text-align: justify;
-  font-weight: var(--font-regular);
+.description_home {
+  padding-bottom: var(--contents-quarter-margin-1);
+}
+
+.more_box {
+  max-width: 600px;
+  margin: auto;
+  text-align: right;
+}
+
+.more_box_a {
+  color: var(--first-color);
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  margin-right: 0.5rem;
+}
+
+.more_box_a > i {
+  font-size: var(--h4-font-size);
+  margin: 0.1rem 0.3rem 0 0;
 }
 
 /* SECTION ******************** SECTION */
@@ -430,16 +445,6 @@ input {
   width: 100%;
 }
 
-/* before */
-/* .section_title {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-regular);
-  line-height: var(--section-title-lineheight);
-  background-color: var(--first-color-third);
-  padding-left: 1rem;
-  margin: 2rem auto;
-} */
-
 /* after */
 .section_title {
   font-size: var(--h3-font-size);
@@ -468,6 +473,7 @@ input {
 }
 
 .hero_all {
+  width: 100%;
   height: 100%;
   overflow: hidden;
   display: flex;
@@ -477,6 +483,10 @@ input {
   background-position: center;
 }
 
+.hero_all_product {
+  background-position: 50% 30%;
+}
+
 .hero_all_text {
   margin: auto;
   text-align: center;
@@ -484,6 +494,15 @@ input {
   color: var(--body-bg-color);
 }
 
+.hero_all_text_menuname {
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-font-size);
+  margin-bottom: 1rem;
+}
+
+.hero_all_text_description {
+  font-size: var(--h4-font-size);
+}
 .hero {
   width: 100%;
   height: 200px;
@@ -1021,10 +1040,6 @@ input {
 .download_warning_description > span :hover,
 .contact_warning_link :hover {
   color: var(--positive-color);
-}
-
-.no_hero {
-  margin-bottom: 5rem;
 }
 
 .contact_warning,
