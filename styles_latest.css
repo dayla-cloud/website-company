@@ -11,12 +11,10 @@
   --first-color-third: hsl(0, 0%, 78%);
   --first-color-fourth: hsl(0, 0%, 93%);
   --warn-color: hsl(0, 100%, 39%);
-  --active-color: hsl(201, 83%, 40%);
-  --positive-color: hsl(201, 100%, 50%);
-  --button-youtube-color: hsl(1, 99%, 45%);
-  --button-bg-color: hsl(181, 38%, 43%);
-  --button-bg-brither-color: hsl(181, 53%, 74%);
+  --active-color: hsl(201, 98%, 32%);
+  --positive-color: hsl(201, 86%, 56%);
   --hero-background-color: hsl(210, 66%, 27%);
+  --button-product-number-color: hsl(201, 100%, 83%);
 
   /* font and typography */
 
@@ -225,9 +223,12 @@ input {
   position: relative;
 }
 
-.nav_link:hover,
-.nav_list li:nth-child(5) > a:hover {
+.nav_link:hover {
   color: var(--first-color-third);
+}
+
+.nav_list li:nth-child(5) > a:hover {
+  color: var(--active-color);
 }
 
 /* show menu start */
@@ -889,7 +890,7 @@ input {
 }
 
 .section_button_img_overlay {
-  height: 65%;
+  height: 60%;
   overflow: hidden;
   display: flex;
 }
@@ -1073,12 +1074,12 @@ input {
 .button_description {
   font-weight: var(--font-regular);
   line-height: var(--description-lineheight);
-  padding-top: 0.75rem;
+  padding-top: 0.25rem;
   padding-bottom: 0.5rem;
 }
 
 .button {
-  background-color: var(--active-color);
+  background-color: var(--positive-color);
   font-size: var(--font-regular);
   font-weight: var(--font-regular);
   text-align: center;
@@ -1123,6 +1124,7 @@ input {
   margin: 0.5rem auto;
   border-radius: 0.5rem;
   overflow: hidden;
+  border: 0.5px solid var(--body-bg-color);
 }
 
 .button_img_overlay > img {
@@ -1672,10 +1674,12 @@ input {
   font-size: var(--h4-font-size);
   font-weight: var(--font-semi-bold);
   margin: 1rem 0;
+  border-bottom: 2px solid var(--active-color);
 }
 
 [class|="embeddedai_description_span"]:last-child {
   color: var(--positive-color);
+  border-bottom: 2px solid var(--positive-color);
 }
 
 .embeddedai_responsivebr {
