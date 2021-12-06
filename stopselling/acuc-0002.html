@@ -18,7 +18,15 @@
       rel="stylesheet"
     />
     <!-- google font //e// -->
+    <!-- Swiper / slide -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- style -->
     <link rel="stylesheet" href="../styles_latest.css" />
+    <link rel="stylesheet" href="../swiper_product.css" />
     <title>アズミー株式会社｜特殊車両用安全AIカメラシステム</title>
   </head>
   <body>
@@ -303,29 +311,42 @@
         <div class="img_contents v_contents_inside">
           <img src="../img/product/acuc0002/p11.jpg" alt="走行中は未検知" />
         </div>
-        <div class="scroll_gallery_icon"><div class="icon-scroll"></div></div>
-        <div class="scroll_gallery">
-          <div class="scroll_gallery_img">
-            <img src="../img/product/acuc0002/g1.jpg" alt="ACUC-0002" />
+      </section>
+      <section class="section container">
+        <h1 class="productdetail_title">ギャラリー</h1>
+        <div class="title_bar"></div>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../img/product/acuc0002/g1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/product/acuc0002/g2.jpg" alt="" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../img/product/acuc0002/g3.jpg" alt="" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../img/product/acuc0002/g4.jpg" alt="" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="../img/product/acuc0002/g5.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/product/acuc0002/g6.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/product/acuc0002/g7.jpg" alt="" />
+            </div>
           </div>
-          <div class="scroll_gallery_img">
-            <img src="../img/product/acuc0002/g2.jpg" alt="ACUC-0002" />
-          </div>
-          <div class="scroll_gallery_img">
-            <img src="../img/product/acuc0002/g3.jpg" alt="ACUC-0002" />
-          </div>
-          <div class="scroll_gallery_img">
-            <img src="../img/product/acuc0002/g4.jpg" alt="ACUC-0002" />
-          </div>
-          <div class="scroll_gallery_img">
-            <img src="../img/product/acuc0002/g5.jpg" alt="ACUC-0002" />
-          </div>
-          <div class="scroll_gallery_img">
-            <img src="../img/product/acuc0002/g6.jpg" alt="ACUC-0002" />
-          </div>
-          <div class="scroll_gallery_img">
-            <img src="../img/product/acuc0002/g7.jpg" alt="ACUC-0002" />
-          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </section>
 
@@ -788,4 +809,53 @@
   </body>
   <script src="../header.js"></script>
   <script src="../productdetail.js"></script>
+  <!-- initiallize swiper -->
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script type="module">
+    import Swiper from "https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js";
+  </script>
+  <script>
+    const swiper1 = new Swiper(".swiper", {
+      loop: true,
+      freemode: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
+
+      autoplay: {
+        delay: 3000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+        reverseDirection: false,
+      },
+
+      keyboard: {
+        emabled: true,
+        onlyInViewport: false,
+      },
+
+      mousewheel: {
+        invert: true,
+      },
+
+      breakpoints: {
+        767: {
+          slidesPerView: 3,
+        },
+        460: {
+          slidesPerView: 2,
+        },
+      },
+    });
+  </script>
 </html>
