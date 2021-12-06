@@ -18,6 +18,15 @@
       rel="stylesheet"
     />
     <!-- google font //e// -->
+    <!-- Swiper / slide -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="../swiper_product.css" />
+
     <link rel="stylesheet" href="../styles_latest.css" />
     <title>アズミー株式会社｜フロントカメラ取付用ブラケット・セット</title>
   </head>
@@ -143,20 +152,25 @@
         <h1 class="productdetail_title">ギャラリー</h1>
         <div class="title_bar"></div>
 
-        <div class="scroll_gallery_icon"><div class="icon-scroll"></div></div>
-        <div class="scroll_gallery">
-          <div class="scroll_gallery_img">
-            <img src="../img/product/apfb0001/g1.jpg" alt="取付画像" />
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../img/product/apfb0001/g1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/product/apfb0001/g2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/product/apfb0001/g3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/product/apfb0001/g4.jpg" alt="" />
+            </div>
           </div>
-          <div class="scroll_gallery_img">
-            <img src="../img/product/apfb0001/g2.jpg" alt="取付画像" />
-          </div>
-          <div class="scroll_gallery_img">
-            <img src="../img/product/apfb0001/g3.jpg" alt="取付画像" />
-          </div>
-          <div class="scroll_gallery_img">
-            <img src="../img/product/apfb0001/g4.jpg" alt="取付画像" />
-          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </section>
       <!-- component -->
@@ -168,9 +182,33 @@
           <!-- component card s -->
           <div class="component_card">
             <div class="component_overlay">
-              <img src="../img/sellingstop_button_img/apcc0001.jpg" alt="" />
+              <img src="../img/product/apfb0001/c1.jpg" alt="apfb0001" />
             </div>
-            <p class="component_p">本体×1</p>
+            <p class="component_p">ナンバープレート用ブラケット×1</p>
+          </div>
+          <!-- component card e -->
+          <!-- component card s -->
+          <div class="component_card">
+            <div class="component_overlay">
+              <img src="../img/product/apfb0001/c2.jpg" alt="apfb0001" />
+            </div>
+            <p class="component_p">カメラ用ブラケット×</p>
+          </div>
+          <!-- component card e -->
+          <!-- component card s -->
+          <div class="component_card">
+            <div class="component_overlay">
+              <img src="../img/product/apfb0001/c3.jpg" alt="apfb0001" />
+            </div>
+            <p class="component_p">M3×6 組みネジ（ステンレス）×2本体×1</p>
+          </div>
+          <!-- component card e -->
+          <!-- component card s -->
+          <div class="component_card">
+            <div class="component_overlay">
+              <img src="../img/product/apfb0001/c4.jpg" alt="apfb0001" />
+            </div>
+            <p class="component_p">M2×3 ネジ（ネジロックつき）×4</p>
           </div>
           <!-- component card e -->
         </div>
@@ -183,13 +221,17 @@
           <table class="table_spec">
             <tbody class="table_spec_body">
               <tr>
-                <td class="table_spec_category">長さ</td>
-                <td class="table_spec_description">15m</td>
+                <td class="table_spec_category">ブラケット部</td>
+                <td class="table_spec_description">鉄（黒色焼付塗装）</td>
               </tr>
 
               <tr>
+                <td class="table_spec_category">外形寸法(mm)</td>
+                <td class="table_spec_description">240(W)×157(H)×31(D)</td>
+              </tr>
+              <tr>
                 <td class="table_spec_category">質量</td>
-                <td class="table_spec_description">730g</td>
+                <td class="table_spec_description">230g</td>
               </tr>
             </tbody>
           </table>
@@ -293,4 +335,53 @@
   </body>
   <script src="../header.js"></script>
   <script src="../productdetail.js"></script>
+  <!-- initiallize swiper -->
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script type="module">
+    import Swiper from "https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js";
+  </script>
+  <script>
+    const swiper1 = new Swiper(".swiper", {
+      loop: true,
+      freemode: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
+
+      autoplay: {
+        delay: 3000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+        reverseDirection: false,
+      },
+
+      keyboard: {
+        emabled: true,
+        onlyInViewport: false,
+      },
+
+      mousewheel: {
+        invert: true,
+      },
+
+      breakpoints: {
+        767: {
+          slidesPerView: 3,
+        },
+        460: {
+          slidesPerView: 2,
+        },
+      },
+    });
+  </script>
 </html>
