@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;300;400;500&display=swap");
+
+:root {
+  --header-height: 4.125rem;
+
+  /* HSL color mode */
+  --body-bg-color: hsl(0, 0%, 100%);
+  --first-color: hsl(0, 0%, 4%);
+  --first-color-second: hsl(0, 0%, 31%);
+  --first-color-third: hsl(0, 0%, 78%);
+  --first-color-fourth: hsl(0, 0%, 93%);
+  --warn-color: hsl(0, 100%, 39%);
+  --active-color: hsl(201, 98%, 32%);
+  --positive-color: hsl(201, 86%, 56%);
+  --hero-background-color: hsl(210, 66%, 27%);
+  --button-product-number-color: hsl(201, 100%, 83%);
+  --darkblue-color: hsl(209, 69%, 23%);
+
+  /* font and typography */
+
+  --body-font: "Noto Sans JP", "M PLUS 1 Code", sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --bigtitle-font-size: 3.5rem;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.313rem;
+  --h4-font-size: 1.188rem;
+
+  --section-title-lineheight: 2.75rem;
+  --description-lineheight: 1.25rem;
+
+  --hero-title: 2.5rem;
+  --hero-subtitle: 1.875rem;
+
+  /* font weight */
+  --font-regular: 300;
+  --font-semi-bold: 400;
+  --font-bold: 500;
+
+  /* margin bottom*/
+  /* between HERO title and description*/
+  --hero-margin: 0.875rem;
+  /* between CONTENTS title and description*/
+  --contents-margin: 4rem;
+  --contents-half-margin-2: 2rem;
+  --contents-quarter-margin-1: 1rem;
+  /* between each SECTIONS */
+  --section-margin: 9.375rem;
+  /* between title and dscrp in IMG BUTTON */
+  --img-title-margin: 0.625rem;
+  /* between product detail img & text margin */
+  --product-detail-img-margin: 2rem;
+  /* section top/bottom */
+  --section-top-padding: 2rem;
+  --section-bottom-padding: 3.75rem;
+
+  /* z index */
+  --z-fixed: 100;
+  --z-page: 10;
+  --z-hero: 1;
+}
+
+/* AI搭載カメラだから*/
+
+/* font */
+
+.acuc0004-aicamera-list-card-title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--darkblue-color);
+  text-align: center;
+  margin-bottom: var(--contents-half-margin-2);
+}
+
+.acuc0004-aicamera-list-card-title-blue {
+  font-size: var(--h4-font-size);
+  color: var(--body-bg-color);
+  background-color: var(--darkblue-color);
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.acuc0004-aicamera-list-card-description {
+  font-weight: var(--font-regular);
+  font-size: var(--small-font-size);
+  line-height: calc(var(--small-font-size) + 0.25rem);
+}
+
+/* card */
+
+.acuc0004-aicamera-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: center;
+  gap: 10px;
+}
+
+.acuc0004-aicamera-list-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--first-color-fourth);
+  border-radius: 1rem;
+}
+
+div[class*="-justify"] {
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+div[class$="card"] {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  padding: 1.5rem;
+}
+
+.acuc0004-aicamera-list div:first-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.acuc0004-aicamera-list div:nth-child(2) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.acuc0004-aicamera-list div:nth-child(3) {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+.acuc0004-aicamera-list div:nth-child(4) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.acuc0004-aicamera-list div:last-child {
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+.acuc0004-aicamera-list-card-overlay {
+  width: 200px;
+  height: 180px;
+  overflow: hidden;
+  display: flex;
+}
+
+.acuc0004-aicamera-list-card-overlay > img {
+  object-fit: contain;
+}
+
+.acuc0004-aicamera-list-card-title-blue {
+  margin-bottom: var(--contents-quarter-margin-1);
+}
+
+.acuc0004-aicamera-list-card-justify {
+  justify-content: flex-start;
+  background-color: transparent;
+}
+
+/* AI搭載カメラだから　tablet*/
+
+@media screen and (min-width: 481px) and (max-width: 771px) {
+  .acuc0004-aicamera-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .acuc0004-aicamera-list div:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .acuc0004-aicamera-list div:nth-child(2) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .acuc0004-aicamera-list div:nth-child(3) {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .acuc0004-aicamera-list div:nth-child(4) {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  .acuc0004-aicamera-list div:last-child {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  .acuc0004-aicamera-list-card-overlay {
+    width: 200px;
+    height: 180px;
+    overflow: hidden;
+    display: flex;
+  }
+}
+
+/* AI搭載カメラだから　mobile*/
+
+@media screen and (max-width: 480px) {
+  .acuc0004-aicamera-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    gap: var(--contents-quarter-margin-1);
+  }
+
+  .acuc0004-aicamera-list-card-title-blue {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* SWIPER */
+.swiper {
+  max-width: 968px;
+  margin: 0 auto;
+}
+
+.slide2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+  max-width: 300px;
+  gap: 10px;
+  margin-right: 1rem;
+}
+
+/* ９パターンの検知範囲*/
+.acuc0004-area-title {
+  color: var(--body-bg-color);
+  font-size: var(--normal-font-size);
+  background-color: var(--darkblue-color);
+  width: 100%;
+  text-align: center;
+}
