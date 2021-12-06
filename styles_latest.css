@@ -1703,6 +1703,107 @@ input {
   height: 420px;
 }
 
+/* Embedded AI */
+
+.embeddedai {
+  width: 100%;
+  margin: 1.5rem auto 0;
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+}
+
+.embeddedai_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 220px;
+  height: 220px;
+  border: 1px solid var(--first-color);
+  border-radius: 50%;
+}
+
+.embeddedai_card_title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.embeddedai_description {
+  margin-top: 1.5rem;
+  text-align: center;
+  line-height: var(--h1-font-size);
+}
+
+.embeddedai_description_span {
+  color: var(--active-color);
+  font-size: var(--h4-font-size);
+  font-weight: var(--font-semi-bold);
+  margin: 1rem 0;
+}
+
+[class|="embeddedai_description_span"]:last-child {
+  color: var(--positive-color);
+}
+
+.embeddedai_responsivebr {
+  display: none;
+}
+
+@media screen and (max-width: 732px) {
+  .embeddedai {
+    width: 100%;
+    margin: 1.5rem auto 0;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(170px, auto));
+  }
+  .embeddedai_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 170px;
+    height: 170px;
+    border: 1px solid var(--first-color);
+    border-radius: 50%;
+  }
+
+  .embeddedai_responsivebr {
+    display: block;
+  }
+
+  .embeddedai_card_title {
+    font-size: var(--h4-font-size);
+  }
+}
+
+@media screen and (max-width: 581px) {
+  .embeddedai {
+    width: 100%;
+    margin: 1.5rem auto 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .embeddedai_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 170px;
+    height: 170px;
+    border: 1px solid var(--first-color);
+    border-radius: 50%;
+  }
+}
 /* FOOTER */
 
 .footer {
