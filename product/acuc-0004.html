@@ -386,7 +386,8 @@
       </section>
       <section class="section container">
         <h1 class="productdetail_title">
-          <span class="productdetail_subtitle">静止・歩行・しゃがみ込み…</span
+          <span class="productdetail_subtitle"
+            >静止・歩行・しゃがみ込み<sup>※1</sup>…</span
           ><br />人だけを検知！
         </h1>
         <div class="title_bar"></div>
@@ -426,7 +427,12 @@
           <span class="productdetail_subtitle">車両・現場に合わせれる</span
           ><br />９パターンの検知範囲
         </h1>
+
         <div class="title_bar"></div>
+        <p class="productdetail_description">
+          特殊車両の種類や取り付け高さに合わせて検知範囲を選択できます。
+          <br />検知範囲の切り替えは簡単な操作で行え、各カメラ毎に検知範囲を設定できます。
+        </p>
         <div class="swiper swiper2">
           <div class="swiper-wrapper">
             <div class="swiper-slide slide2">
@@ -475,6 +481,9 @@
               />
             </div>
           </div>
+          <div class="swiper-button-prev prev2"></div>
+          <div class="swiper-button-next next2"></div>
+          <div class="swiper-pagination page2"></div>
         </div>
       </section>
       <section class="section container">
@@ -486,11 +495,66 @@
         <p class="productdetail_description">
           オプションでマグネットタイプのマウントもランナップされており、現場や車両が変わっても、脱着可能なため、柔軟にご使用いただけます。
         </p>
+        <div class="acuc0004-construction-car-list">
+          <img
+            src="../img/product/acuc0004/SVG/concar4.svg"
+            alt=""
+            class="acuc0004-construction-car-card"
+          />
+          <img
+            src="../img/product/acuc0004/SVG/concar5.svg"
+            alt=""
+            class="acuc0004-construction-car-card"
+          />
+          <img
+            src="../img/product/acuc0004/SVG/concar6.svg"
+            alt=""
+            class="acuc0004-construction-car-card"
+          />
+
+          <img
+            src="../img/product/acuc0004/SVG/concar3.svg"
+            alt=""
+            class="acuc0004-construction-car-card"
+          />
+          <img
+            src="../img/product/acuc0004/SVG/concar2.svg"
+            alt=""
+            class="acuc0004-construction-car-card"
+          />
+          <img
+            src="../img/product/acuc0004/SVG/concar1.svg"
+            alt=""
+            class="acuc0004-construction-car-card"
+          />
+        </div>
       </section>
 
       <section class="section container">
         <h1 class="productdetail_title">ギャラリー</h1>
         <div class="title_bar"></div>
+        <div class="swiper swiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide3">
+              <img src="../img/product/acuc0004/g1.jpg" alt="acuc0004" />
+            </div>
+            <div class="swiper-slide slide3">
+              <img src="../img/product/acuc0004/g2.jpg" alt="acuc0004" />
+            </div>
+            <div class="swiper-slide slide3">
+              <img src="../img/product/acuc0004/g3.jpg" alt="acuc0004" />
+            </div>
+            <div class="swiper-slide slide3">
+              <img src="../img/product/acuc0004/g4.jpg" alt="acuc0004" />
+            </div>
+            <div class="swiper-slide slide3">
+              <img src="../img/product/acuc0004/g5.jpg" alt="acuc0004" />
+            </div>
+          </div>
+          <div class="swiper-button-prev prev3"></div>
+          <div class="swiper-button-next next3"></div>
+          <div class="swiper-pagination page3"></div>
+        </div>
       </section>
       <section class="section container">
         <h1 class="productdetail_title">仕様</h1>
@@ -773,7 +837,7 @@
         },
       },
       mousewheel: {
-        invert: true,
+        invert: false,
       },
       navigation: {
         prevEl: ".prev1",
@@ -781,6 +845,88 @@
       },
       pagination: {
         el: ".page1",
+        type: "bullets",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+        reverseDirection: false,
+      },
+    });
+
+    const swiper2 = new Swiper(".swiper2", {
+      spaceBetween: 10,
+      slidesPerView: 1,
+      slideToClickedSlide: true,
+      freemode: true,
+      loop: true,
+      keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+      },
+
+      navigation: {
+        prevEl: ".prev2",
+        nextEl: ".next2",
+      },
+
+      autoplay: {
+        delay: 3000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+        reverseDirection: false,
+      },
+
+      pagination: {
+        el: ".page2",
+        type: "bullets",
+        clickable: true,
+      },
+
+      breakpoints: {
+        480: {
+          slidesPerView: 3,
+          autoplay: {
+            enabled: false,
+          },
+        },
+
+        320: {
+          slidesPerView: 2,
+        },
+      },
+    });
+
+    const swiper3 = new Swiper(".swiper3", {
+      spaceBetween: 10,
+      slidesPerView: 1,
+      slideToClickedSlide: true,
+      freemode: true,
+      loop: true,
+      keyboard: {
+        emabled: true,
+        onlyInViewport: false,
+      },
+
+      breakpoints: {
+        480: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+      },
+      mousewheel: {
+        invert: false,
+      },
+      navigation: {
+        prevEl: ".prev3",
+        nextEl: ".next3",
+      },
+      pagination: {
+        el: ".page3",
         type: "bullets",
         clickable: true,
       },

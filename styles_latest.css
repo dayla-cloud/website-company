@@ -139,6 +139,10 @@ input {
   outline: none;
 }
 
+sup {
+  font-size: var(--small-font-size);
+}
+
 .main {
   overflow-x: hidden;
   -webkit-overflow-x: hidden;
