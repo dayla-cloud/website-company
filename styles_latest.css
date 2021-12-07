@@ -421,6 +421,8 @@ sup {
 
 /* 製品一覧・ダウンロード・取説ダウンロードページの製品ボタン */
 .section_button {
+  background-color: var(--body-bg-color);
+  border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
@@ -431,17 +433,17 @@ sup {
 
 .section_button:hover {
   filter: brightness(95%);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  -moz-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .section_button_a {
@@ -470,7 +472,7 @@ sup {
 .product_list {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(235px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 250px));
   justify-content: center;
   gap: 20px;
   padding: 0 1rem;
@@ -482,6 +484,8 @@ sup {
 }
 
 .section_button_img_overlay {
+  border-radius: 1rem 1rem 0 0;
+
   height: 60%;
   overflow: hidden;
   display: flex;
@@ -1024,12 +1028,15 @@ sup {
   -webkit-transition: all 100ms ease-in;
   -moz-transition: all 100ms ease-in;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .button_stopselling {
@@ -1041,9 +1048,17 @@ sup {
 }
 
 .button:hover {
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 4px 0px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 4px 0px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 4px 0px inset;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  -moz-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .button_img_overlay {
@@ -1155,9 +1170,11 @@ sup {
   background-color: var(--first-color-fourth);
   padding: 1rem;
   text-align: center;
-  transition: all 300ms ease;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
 }
 
 .description_appealpoint_details {
@@ -1189,18 +1206,32 @@ sup {
   font-weight: var(--font-semi-bold);
   padding: 0.5rem 1rem;
   background-color: var(--first-color);
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  -moz-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
 }
 
 .description_appeallist_toggle:hover {
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  -mox-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /* gif */
@@ -1297,6 +1328,11 @@ sup {
   grid-template-rows: repeat(5, 65px);
   align-content: center;
   justify-content: center;
+  background-color: var(--first-color-fourth);
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
 }
 
 .about_history_year_grid_list_box_point {
@@ -1524,6 +1560,10 @@ sup {
   justify-content: center;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  background-color: var(--first-color-fourth);
+  max-width: 800px;
+  padding: 2rem 0;
+  border-radius: 1rem;
 }
 
 .embeddedai_card {
@@ -1630,6 +1670,10 @@ sup {
   padding: 0 1rem;
 }
 
+.release_button {
+  background-color: var(--body-bg-color);
+}
+
 .release_link {
   display: flex;
   flex-direction: column;
@@ -1638,6 +1682,8 @@ sup {
 .release_img_overlay {
   height: 45%;
   overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+  bottom: 0;
 }
 
 .release_description {
@@ -1735,11 +1781,23 @@ sup {
 }
 
 .toggle_page {
-  display: none;
+  filter: opacity(0.7);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
 }
 
 .open-page {
-  display: block;
+  filter: opacity(1);
+  pointer-events: all;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
 }
 
 /* FOOTER */ /* ******************************************************************************************* */ /* FOOTER */
