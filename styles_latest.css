@@ -208,9 +208,7 @@ sup {
 .nav_list {
   display: flex;
   flex-direction: column;
-
   row-gap: 2.75rem;
-
   padding-top: 1.5rem;
 }
 
@@ -254,6 +252,15 @@ sup {
   }
 }
 
+@media screen and (max-height: 480px) {
+  .nav_list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    padding-top: 1.5rem;
+  }
+}
+
 .show-menu {
   right: 0;
 }
@@ -277,7 +284,7 @@ sup {
   display: flex;
   align-items: center;
   column-gap: 1.5rem;
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 
 .nav_social_link {
