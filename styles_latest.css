@@ -459,14 +459,17 @@ sup {
   text-align: center;
 }
 
+.product_button {
+  max-width: 288px;
+}
+
 .product_list {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
   justify-content: center;
   gap: 20px;
   padding: 0 1rem;
-  min-height: 290px;
 }
 
 .product_img {
@@ -475,8 +478,7 @@ sup {
 
 .section_button_img_overlay {
   border-radius: 1rem 1rem 0 0;
-
-  height: 60%;
+  width: 100%;
   overflow: hidden;
   display: flex;
 }
