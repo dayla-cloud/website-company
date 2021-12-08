@@ -316,15 +316,6 @@ sup {
   }
 }
 
-@media screen and (max-height: 480px) {
-  .nav_list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.75rem;
-    padding-top: 1.5rem;
-  }
-}
-
 .show-menu {
   right: 0;
 }
