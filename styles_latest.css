@@ -412,7 +412,6 @@ sup {
 
 /* 製品一覧・ダウンロード・取説ダウンロードページの製品ボタン */
 .section_button {
-  min-height: 250px;
   background-color: var(--body-bg-color);
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
@@ -485,6 +484,7 @@ sup {
 .product_description {
   text-align: center;
   padding: 0.5rem;
+  min-height: 92px;
 }
 
 .product_description > p {
@@ -1656,7 +1656,7 @@ sup {
 .release_list {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 250px));
+  grid-template-columns: repeat(auto-fill, minmax(220px, auto));
   justify-content: center;
   gap: 20px;
   padding: 0 1rem;
