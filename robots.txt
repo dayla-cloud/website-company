@@ -1,0 +1,11 @@
+
+User-agent:*
+Disallow: /stopselling/
+
+User-agent: Googlebot-Image
+Disallow: /*.svg$
+Disallow: /*.gif$
+
+User-agent: Yahoo-MMCrawler
+Disallow: /*.svg$
+Disallow: /*.gif$
