@@ -1,6 +1,8 @@
 
 User-agent:*
 Disallow: /stopselling/
+Disallow: /video/
+Disallow: /toriatsukai/
 
 User-agent: Googlebot-Image
 Disallow: /*.svg$
