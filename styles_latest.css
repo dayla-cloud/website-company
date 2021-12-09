@@ -1241,13 +1241,13 @@ sup {
 }
 .contents-title {
   color: var(--body-bg-color);
-  font-size: var(--h3-font-size);
+  font-size: var(--normal-font-size);
   font-weight: var(--font-semi-bold);
   background-color: var(--contents-title-backgroudn-color);
   text-align: center;
-  padding: 0.5rem 2rem;
+  padding: 0.25rem 1rem;
   border-radius: 2rem;
-  max-width: 180px;
+  max-width: 140px;
   margin: auto;
 }
 
