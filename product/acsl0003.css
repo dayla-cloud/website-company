@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;300;400;500&display=swap");
+
+:root {
+  --header-height: 4.125rem;
+
+  /* HSL color mode */
+  --body-bg-color: hsl(0, 0%, 100%);
+  --first-color: hsl(0, 0%, 4%);
+  --first-color-second: hsl(0, 0%, 31%);
+  --first-color-third: hsl(0, 0%, 78%);
+  --first-color-fourth: hsl(0, 0%, 93%);
+  --warn-color: hsl(0, 100%, 39%);
+  --active-color: hsl(201, 98%, 32%);
+  --positive-color: hsl(201, 86%, 56%);
+  --hero-background-color: hsl(210, 66%, 27%);
+  --button-product-number-color: hsl(201, 100%, 83%);
+  --darkblue-color: hsl(209, 69%, 23%);
+  --contents-background-color: hsl(0, 0%, 96%);
+  --contents-title-backgroudn-color: hsl(330, 1%, 44%);
+
+  /* font and typography */
+
+  --body-font: "Noto Sans JP", "M PLUS 1 Code", sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --bigtitle-font-size: 3.5rem;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.313rem;
+  --h4-font-size: 1.188rem;
+
+  --section-title-lineheight: 2.75rem;
+  --description-lineheight: 1.25rem;
+
+  --hero-title: 2.5rem;
+  --hero-subtitle: 1.875rem;
+
+  /* font weight */
+  --font-regular: 300;
+  --font-semi-bold: 400;
+  --font-bold: 500;
+
+  /* margin bottom*/
+  /* between HERO title and description*/
+  --hero-margin: 0.875rem;
+  /* between CONTENTS title and description*/
+  --contents-margin: 4rem;
+  --contents-half-margin-2: 2rem;
+  --contents-quarter-margin-1: 1rem;
+  /* between each SECTIONS */
+  --section-margin: 9.375rem;
+  /* between title and dscrp in IMG BUTTON */
+  --img-title-margin: 0.625rem;
+  /* between product detail img & text margin */
+  --product-detail-img-margin: 2rem;
+  /* section top/bottom */
+  --section-top-padding: 2rem;
+  --section-bottom-padding: 3.75rem;
+
+  /* z index */
+  --z-fixed: 100;
+  --z-page: 10;
+  --z-hero: 1;
+}
+
+.contents-acsl0003-monitorgif-el-img {
+  width: 100%;
+  max-width: 968px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  gap: 1rem;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+/* 実際の映像 */
+.contents-acsl0003-monitorgif-el-gif,
+.contents-acsl0003-monitorgif-el-svg {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+/* 実際の映像ー　表示アイコン */
+.contents-acsl0003-monitorgif-el-icon {
+  text-align: center;
+}
+
+.contents-acsl0003-monitorgif-el-icon-ul {
+  max-width: 600px;
+  margin: 0.5rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+  gap: 1rem;
+  justify-content: center;
+}
+
+.contents-acsl0003-monitorgif-el-icon-li {
+  display: flex;
+  gap: 10px;
+  text-align: left;
+}
+.contents-acsl0003-monitorgif-el-icon-li img {
+  width: 20px;
+}
+
+/* 実際の映像ー　表示アイコン： 説明文*/
+
+.contents-acsl0003-monitorgif-el-icon-descrpt-ul {
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 1rem;
+  justify-content: center;
+}
+
+.contents-acsl0003-monitorgif-el-icon-descrpt-ul-li > img {
+  max-width: 50px;
+  height: 30px;
+}

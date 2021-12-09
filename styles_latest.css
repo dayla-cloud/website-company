@@ -17,6 +17,7 @@
   --button-product-number-color: hsl(201, 100%, 83%);
   --darkblue-color: hsl(209, 69%, 23%);
   --contents-background-color: hsl(0, 0%, 96%);
+  --contents-title-backgroudn-color: hsl(330, 1%, 44%);
 
   /* font and typography */
 
@@ -1231,6 +1232,38 @@ sup {
 }
 
 /* Contents */ /* ************************************************************************************* */ /* Contents */
+
+/* contents-font */
+
+.contents {
+  background-color: var(--contents-background-color);
+  padding: 2rem;
+}
+.contents-title {
+  color: var(--body-bg-color);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+  background-color: var(--contents-title-backgroudn-color);
+  text-align: center;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  max-width: 180px;
+  margin: auto;
+}
+
+.contents-sub,
+.contents-description {
+  color: var(--first-color);
+  font-size: var(--normal-font-size);
+}
+
+.contents-sub {
+  font-weight: var(--font-semi-bold);
+}
+
+.contents-description {
+  font-weight: var(--font-regular);
+}
 
 /* contents-embedded ai */
 .contents-embeddedai {
