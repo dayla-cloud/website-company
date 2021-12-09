@@ -16,6 +16,7 @@
   --hero-background-color: hsl(210, 66%, 27%);
   --button-product-number-color: hsl(201, 100%, 83%);
   --darkblue-color: hsl(209, 69%, 23%);
+  --contents-background-color: hsl(0, 0%, 96%);
 
   /* font and typography */
 
@@ -1227,6 +1228,73 @@ sup {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Contents */ /* ************************************************************************************* */ /* Contents */
+
+/* contents-embedded ai */
+.contents-embeddedai {
+  background-color: var(--contents-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contents-embeddedai {
+    flex-direction: column;
+  }
+}
+
+.contents-embeddedai-text {
+  text-align: center;
+}
+.contents-embeddedai-text-title {
+  font-size: var(--bigtitle-font-size);
+  line-height: var(--bigtitle-font-size);
+  font-weight: var(--font-bold);
+}
+
+.contents-embeddedai-text-sub {
+  padding-top: 1rem;
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.contents-embeddedai-overlay {
+  position: relative;
+  max-width: 300px;
+}
+
+.contents-embeddedai-overlay-img {
+  object-fit: cover;
+}
+
+.contents-embeddedai-overlay-svg {
+  position: absolute;
+  max-width: 120px;
+  right: -30px;
+  top: 0;
+}
+@media screen and (max-width: 480px) {
+  .contents-embeddedai-text-title {
+    font-size: var(--h1-font-size);
+    line-height: var(--h1-font-size);
+    font-weight: var(--font-bold);
+  }
+
+  .contents-embeddedai-text-sub {
+    padding-top: 1rem;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+  }
+
+  .contents-embeddedai-overlay {
+    position: relative;
+    max-width: 200px;
+  }
 }
 
 /* gif */
