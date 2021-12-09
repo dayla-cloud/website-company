@@ -1237,7 +1237,7 @@ sup {
 
 .contents {
   background-color: var(--contents-background-color);
-  padding: 2rem;
+  padding: 1rem;
 }
 .contents-title {
   color: var(--body-bg-color);
@@ -1248,7 +1248,7 @@ sup {
   padding: 0.25rem 1rem;
   border-radius: 2rem;
   max-width: 140px;
-  margin: auto;
+  margin: 1rem auto;
 }
 
 .contents-sub,
@@ -1263,6 +1263,10 @@ sup {
 
 .contents-description {
   font-weight: var(--font-regular);
+}
+
+.contents-acsl0003-objicon-icons-el-title {
+  color: var(--body-bg-color);
 }
 
 /* contents-embedded ai */
