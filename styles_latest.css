@@ -629,13 +629,13 @@ sup {
 
   .hero-description-boxes-camera-title {
     font-size: var(--h1-font-size);
-    line-height: calc(var(--h1-font-size) + 0.5rem);
+    line-height: var(--h1-font-size);
   }
 
   .hero-description-boxes-camera-subtitle {
     font-size: var(--h3-font-size);
     line-height: var(--h3-font-size);
-    margin-bottom: var(--contents-quarter-margin-1);
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -674,17 +674,6 @@ sup {
   display: flex;
 }
 
-@media screen and (max-height: 450px) {
-  .productdetail_media {
-    width: 90%;
-    max-width: 968px;
-    background-color: rgba(255, 255, 255, 0.5);
-    text-align: center;
-    padding: 0.5rem;
-    margin: 1rem auto;
-  }
-}
-
 @media screen and (max-height: 530px) {
   .productdetail_media_list {
     margin-top: 0.5rem;
@@ -704,6 +693,16 @@ sup {
   }
 }
 
+@media screen and (max-height: 450px) {
+  .productdetail_media {
+    width: 90%;
+    max-width: 968px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 0.5rem;
+    margin: 1rem auto;
+  }
+}
 /* スクロールアイコン ：アニメーション*/
 .scroll_hero_icon {
   position: relative;
