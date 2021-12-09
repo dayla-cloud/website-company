@@ -962,6 +962,7 @@ sup {
 .stopselling_overlay {
   width: 150px;
   height: 150px;
+  display: none;
 }
 
 .stopselling_description {
@@ -1526,6 +1527,10 @@ sup {
 }
 
 /* 採用 */
+.recruit {
+  display: none;
+}
+
 .recruit-widget {
   margin-top: 3rem;
   width: 100%;
