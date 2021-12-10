@@ -117,6 +117,10 @@ li {
   cursor: pointer;
 }
 
+.main li {
+  cursor: default;
+}
+
 a {
   text-decoration: none;
   cursor: pointer !important;
