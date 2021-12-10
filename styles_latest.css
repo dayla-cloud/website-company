@@ -1074,6 +1074,11 @@ sup {
 
 /* CONTENTS INSIDE */ /* ******************************************************************************************* */ /* CONTENTS INSIDE */
 
+.video_box {
+  max-width: 600px;
+  margin: auto;
+}
+
 .v_contents {
   position: relative;
   padding-bottom: 56.25%;
@@ -1150,6 +1155,9 @@ sup {
   padding-bottom: 0;
 }
 
+.noneed_ai p[class$="description"] {
+  text-align: center;
+}
 /* Appeal phoint ver.01 */ /* ************************************************************************************* */ /* 特長*/ /* Appeal phoint ver.01 */
 
 .description_appeallist {
@@ -1238,6 +1246,7 @@ sup {
 .contents {
   background-color: var(--contents-background-color);
   padding: 1rem;
+  border-radius: 2rem;
 }
 .contents-title {
   color: var(--body-bg-color);
@@ -1267,6 +1276,12 @@ sup {
 
 .contents-acsl0003-objicon-icons-el-title {
   color: var(--body-bg-color);
+}
+
+.contents-acsl0003-object-illust-ul-li p[class$="title"] {
+  max-width: 100px;
+  background-color: transparent;
+  color: var(--first-color);
 }
 
 .contents-acsl0003-wdr-pic-el-overlay-title-on {
