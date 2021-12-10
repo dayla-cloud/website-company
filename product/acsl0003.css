@@ -585,3 +585,134 @@ div[class$="warning"] table tbody tr td:nth-child(4) {
     margin: auto;
   }
 }
+
+/* 簡単取り付け */
+
+.contents-acsl0003-install {
+  text-align: center;
+}
+
+.contents-acsl0003-install-list {
+  margin-top: 1rem;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.contents-acsl0003-install-list-el-overlay {
+  min-width: 150px;
+  max-width: 280px;
+  height: auto;
+  overflow: hidden;
+  background-color: var(--body-bg-color);
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.contents-acsl0003-install-list-el-overlay img {
+  object-fit: cover;
+}
+
+.contents-acsl0003-install-list-el-overlay-triangle {
+  width: 0;
+  height: 0;
+  border-top: 50px solid var(--darkblue-color);
+  border-right: 50px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contents-acsl0003-install-list-el-overlay-triangle-number {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+  padding-left: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .contents-acsl0003-install-list {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* WDR */
+.contents-acsl0003-wdr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.contents-acsl0003-wdr-pic {
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contents-acsl0003-wdr-pic-el {
+  max-width: 300px;
+  min-width: 200px;
+}
+
+.contents-acsl0003-wdr-pic-el-overlay {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.contents-acsl0003-wdr-pic-el-overlay img {
+  object-fit: cover;
+}
+
+/* ** WDR ON / OFF タイトルのスタイルは styles_latest.css にある。 ** */
+
+.contents-acsl0003-wdr-pic-el p[class$="description"] {
+  text-align: left;
+}
+.contents-acsl0003-wdr-icons {
+  margin: 2rem 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(10px, auto));
+  justify-content: center;
+  gap: 30px;
+}
+
+.contents-acsl0003-wdr-icons img {
+  min-width: 15px;
+  max-width: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .contents-acsl0003-wdr-pic {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .contents-acsl0003-wdr-icons {
+    margin: 2rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(10px, auto));
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  .contents-acsl0003-wdr-icons img {
+    min-width: 15px;
+    max-width: 40px;
+  }
+}

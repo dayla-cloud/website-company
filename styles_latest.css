@@ -1269,6 +1269,16 @@ sup {
   color: var(--body-bg-color);
 }
 
+.contents-acsl0003-wdr-pic-el-overlay-title-on {
+  background-color: #e8bc05;
+  color: var(--first-color);
+  font-weight: var(--font-bold);
+}
+
+.contents-acsl0003-wdr-pic-el-overlay-title-off {
+  background-color: var(--first-color);
+}
+
 /* contents-embedded ai */
 .contents-embeddedai {
   background-color: var(--contents-background-color);
