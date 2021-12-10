@@ -425,10 +425,6 @@
   max-width: 400px;
 }
 
-.contents-acsl0003-area-layout-warning {
-  padding-top: 2rem;
-}
-
 div[class$="warning"] table {
   border-collapse: collapse;
   margin-top: 1rem;
@@ -534,5 +530,9 @@ div[class$="warning"] table tbody tr td:nth-child(4) {
   .contents-acsl0003-area-layout-warning {
     max-width: 400px;
     margin: auto;
+  }
+
+  .contents-acsl0003-area-layout-warning {
+    padding-top: 2rem;
   }
 }
