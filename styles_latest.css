@@ -1078,7 +1078,7 @@ sup {
 
 /* CONTENTS INSIDE */ /* ******************************************************************************************* */ /* CONTENTS INSIDE */
 
-.video_box {
+.wrap600 {
   max-width: 600px;
   margin: auto;
 }
@@ -1160,6 +1160,10 @@ sup {
 }
 
 .noneed_ai p[class$="description"] {
+  text-align: center;
+}
+
+.productdetail_description_center {
   text-align: center;
 }
 /* Appeal phoint ver.01 */ /* ************************************************************************************* */ /* 特長*/ /* Appeal phoint ver.01 */
@@ -1251,6 +1255,7 @@ sup {
   background-color: var(--contents-background-color);
   padding: 1rem;
   border-radius: 2rem;
+  margin: 1rem auto;
 }
 .contents-title {
   color: var(--body-bg-color);
