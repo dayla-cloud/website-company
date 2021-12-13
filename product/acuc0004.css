@@ -228,6 +228,49 @@ div[class$="card"] {
   }
 }
 
+/* 検知対象のイラスト */
+.contents-acuc0004-objectillust {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+  align-items: flex-end;
+}
+
+.contents-acuc0004-objectillust img {
+  width: 90px;
+}
+.contents-acuc0004-objectillust img:nth-child(2) {
+  width: 85px;
+}
+.contents-acuc0004-objectillust img:nth-child(3) {
+  width: 65px;
+}
+.contents-acuc0004-objectillust img:last-child {
+  width: 75px;
+}
+
+@media screen and (max-width: 480px) {
+  .contents-acuc0004-objectillust {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  .contents-acuc0004-objectillust img {
+    width: 65px;
+  }
+  .contents-acuc0004-objectillust img:nth-child(2) {
+    width: 60px;
+  }
+  .contents-acuc0004-objectillust img:nth-child(3) {
+    width: 40px;
+  }
+  .contents-acuc0004-objectillust img:last-child {
+    width: 50px;
+  }
+}
+
 /* SWIPER */
 .swiper {
   max-width: 968px;
