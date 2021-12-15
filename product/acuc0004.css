@@ -109,11 +109,11 @@
   border-radius: 1rem;
 }
 
-div[class*="-justify"] {
+.acuc0004-aicamera-list div[class*="-justify"] {
   grid-row-start: 4;
   grid-row-end: 6;
 }
-div[class$="card"] {
+.acuc0004-aicamera-list div[class$="card"] {
   grid-row-start: 1;
   grid-row-end: 4;
   padding: 1.5rem;
@@ -322,4 +322,124 @@ div[class$="card"] {
 
 .acuc0004-construction-car-card {
   max-width: 200px;
+}
+
+/* ９パターンの検知範囲：取付簡単 */
+
+.acuc0004-process-list {
+  margin: var(--contents-half-margin-2) auto;
+  padding: 0 1rem;
+  display: grid;
+  gap: 1rem;
+  background-color: var(--body-bg-color);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+}
+
+.acuc0004-process-title,
+.acuc0004-mount-title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--darkblue-color);
+  text-align: center;
+  padding-top: 1rem;
+}
+.acuc0004-process-list-card {
+  max-width: 300px;
+  text-align: center;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.acuc0004-process-list-card-p {
+  font-size: var(--h4-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--darkblue-color);
+}
+
+.acuc0004-process-list-card-overlay {
+  width: 270px;
+  height: 200px;
+  position: relative;
+}
+
+.acuc0004-process-list-card-overlay img:first-child {
+  position: absolute;
+  width: 60%;
+  min-width: 170px;
+  left: 1rem;
+  bottom: 0;
+}
+.acuc0004-process-list-card-overlay img:last-child {
+  position: absolute;
+  width: 100px;
+  right: 0;
+  top: 0;
+}
+
+.acuc0004-process-list-card:last-child img {
+  min-width: 220px;
+  max-width: 250px;
+}
+
+.acuc0004-process-title-br {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .acuc0004-process-title-br {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .acuc0004-process-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: transparent;
+  }
+
+  .acuc0004-process-list-card {
+    max-width: 250px;
+    min-width: 200px;
+    text-align: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--body-bg-color);
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+}
+
+/* 角度調整 */
+
+.acuc0004-mount {
+  margin-top: 2rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.acuc0004-mount img {
+  max-width: 300px;
+}
+
+.acuc0004-mount-description {
+  max-width: 320px;
+  margin: 1rem auto;
+}
+
+.acuc0004-mount-p {
+  color: var(--darkblue-color);
+  font-weight: var(--font-semi-bold);
 }
