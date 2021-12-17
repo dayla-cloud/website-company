@@ -189,10 +189,20 @@ input[id^="address"] {
   transition: all 0.4s ease;
 }
 
+.form-text {
+  margin-top: 1rem;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: var(--warn-color);
+}
+
 label ~ textarea {
   border-radius: 0.15rem;
-
   padding: 0.25rem;
+}
+
+label[for="message"] {
+  margin-top: 1rem;
 }
 
 p ~ input[type="text"],

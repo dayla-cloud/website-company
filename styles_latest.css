@@ -1939,7 +1939,7 @@ sup {
 /* CHECK BOX */ /* ******************************************************************************************* */ /* CHECK BOX */
 
 .toggle_page {
-  filter: opacity(0.7);
+  filter: opacity(0.3);
   pointer-events: none;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;

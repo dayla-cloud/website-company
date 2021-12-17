@@ -264,9 +264,9 @@
           <label for="phonenumber">お電話番号</label>
           <input type="text" id="phonenumber" name="phonenumber" />
 
-          <label for="phonenumber">メールアドレス</label>
+          <label for="email">メールアドレス</label>
           <input type="email" id="email" name="email" />
-          <label for="phonenumber">メールアドレス(ご確認用)</label>
+          <label for="email">メールアドレス(ご確認用)</label>
           <input type="email" id="email" name="email" />
           <label for="buy"
             >カメラの購入予定はされてますか？
@@ -283,6 +283,24 @@
           <div id="bought">
             <input type="radio" id="bought-yes" name="bought" /> はい
             <input type="radio" id="bought-no" name="bought" /> いいえ
+          </div>
+          <p class="form-text">
+            修理依頼の場合は下記の欄をご記入してください。
+          </p>
+          <label for="storename">ご購入店舗</label>
+          <input type="text" id="storename" name="storename" />
+          <label for="date">ご購入日</label>
+          <input
+            type="date"
+            id="date"
+            lang="jp"
+            name="date"
+            value="2021-12-17"
+          />
+          <label for="date">保証期間内のご確認</label>
+          <div id="bought">
+            <input type="radio" id="in" name="in" />期間内
+            <input type="radio" />期間外（なし）
           </div>
           <label for="message">お問い合わせ内容</label>
           <textarea name="message" id="contact-message"></textarea>
