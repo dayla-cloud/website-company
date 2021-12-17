@@ -1912,10 +1912,17 @@ sup {
 .download_warning {
   text-align: center;
 }
-
-.check-text {
-  font-weight: var(--font-semi-bold);
+.check label {
   color: var(--positive-color);
+}
+.check label input[type="checkbox"] {
+  font-weight: var(--font-semi-bold);
+  line-height: var(--normal-font-size);
+  vertical-align: middle;
+}
+
+.contactform_description {
+  text-align: center;
 }
 
 /* CONTACT */ /* ******************************************************************************************* */ /* CONTACT */
