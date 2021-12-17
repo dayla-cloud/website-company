@@ -415,7 +415,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--body-bg-color);
     padding: 0.5rem;
     border-radius: 1rem;
   }
@@ -425,12 +424,16 @@
 
 .acuc0004-mount {
   margin-top: 2rem;
+}
+
+.acuc0004-mount-imgs {
+  margin-top: 2rem;
   display: flex;
   gap: 3rem;
   justify-content: center;
 }
 
-.acuc0004-mount img {
+.acuc0004-mount-imgs img {
   max-width: 300px;
 }
 
@@ -442,4 +445,15 @@
 .acuc0004-mount-p {
   color: var(--darkblue-color);
   font-weight: var(--font-semi-bold);
+}
+
+@media screen and (max-width: 768px) {
+  .acuc0004-mount-imgs {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
 }
