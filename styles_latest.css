@@ -688,6 +688,7 @@ div[class="hero_all_text"] .hero_all_text_description {
     margin: 1rem auto;
   }
 }
+
 /* スクロールアイコン ：アニメーション*/
 .scroll_hero_icon {
   position: relative;
@@ -743,7 +744,7 @@ div[class="hero_all_text"] .hero_all_text_description {
 /* HERO */ /* オプション */ /* ***************************************************************************** */ /* HERO */ /* オプション */
 
 /* heroの枠 */
-.herosection-option {
+section[class~="herosection-option"] {
   background: var(--body-bg-color);
   height: 40vh;
   min-height: 250px;
@@ -792,6 +793,10 @@ div[class="hero_all_text"] .hero_all_text_description {
   font-weight: var(--font-semi-bold);
 }
 
+.hero-description-option > div > div > p {
+  text-align: center;
+}
+
 .hero-description-option_title {
   font-size: var(--h2-font-size);
   line-height: var(--h2-font-size);
@@ -824,6 +829,11 @@ div[class="hero_all_text"] .hero_all_text_description {
 }
 
 @media screen and (max-width: 600px) {
+  section[class~="herosection-option"] {
+    height: 100%;
+    /* min-height: 450px; */
+  }
+
   .hero-description-option {
     position: relative;
   }
@@ -839,11 +849,6 @@ div[class="hero_all_text"] .hero_all_text_description {
     align-items: center;
     font-weight: var(--font-semi-bold);
     color: var(--body-bg-color); */
-  }
-
-  .herosection-option {
-    height: 100%;
-    /* min-height: 450px; */
   }
 
   .hero-product-option {
@@ -863,12 +868,6 @@ div[class="hero_all_text"] .hero_all_text_description {
     margin: 0 auto;
   }
 
-  .hero-description-option > h1,
-  .hero-description-option > h2,
-  .hero-description-option > div > div > p {
-    color: var(--first-color);
-  }
-
   .hero-description-option > h1 {
     font-size: var(--h2-font-size);
   }
@@ -886,7 +885,7 @@ div[class="hero_all_text"] .hero_all_text_description {
   gap: 20px;
 }
 
-.option_gallery_img {
+div[class~="option_gallery_img"] {
   width: 100%;
   background-color: var(--first-color-second);
   border: solid 1px var(--first-color-third);
@@ -943,6 +942,7 @@ div[class="hero_all_text"] .hero_all_text_description {
 
 /* STOPSELL */ /* ******************************************************************************* */ /* STOP SELLING *** 発 売 終 了 ***/
 
+/* イメージ表示しない */
 .stopselling_overlay {
   width: 150px;
   height: 150px;
@@ -956,10 +956,6 @@ div[class="hero_all_text"] .hero_all_text_description {
   font-weight: var(--font-semi-bold);
   color: var(--first-color);
   padding: 0.5rem 0.25rem;
-}
-
-.stopselling_description > span {
-  font-size: var(--small-font-size);
 }
 
 .stopselling_card {
@@ -977,6 +973,8 @@ div[class="hero_all_text"] .hero_all_text_description {
 }
 
 /* BUTTON */ /* ******************************************************************************************* */ /* BUTTON */
+
+/* 紺色のボタン */
 .button_title {
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi-bold);
@@ -1017,10 +1015,12 @@ div[class="hero_all_text"] .hero_all_text_description {
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
+/* 販売終了ボタン */
 .button_stopselling {
   background-color: var(--warn-color);
 }
 
+/* 共通 */
 .button > a {
   color: var(--body-bg-color);
 }
@@ -1056,10 +1056,13 @@ div[class="hero_all_text"] .hero_all_text_description {
 
 /* CONTENTS INSIDE */ /* ******************************************************************************************* */ /* CONTENTS INSIDE */
 
+/* コンテンツ内の画像サイズ */
 .wrap600 {
   max-width: 600px;
   margin: auto;
 }
+
+/* コンテンツ内のビデオサイズ */
 
 .v_contents {
   position: relative;
@@ -1232,7 +1235,7 @@ div[class="hero_all_text"] .hero_all_text_description {
 .contents {
   background-color: var(--contents-background-color);
   padding: 1rem;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   margin: 1rem auto;
 }
 .contents-title {
