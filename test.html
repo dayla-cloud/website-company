@@ -164,49 +164,6 @@
           は必ずご記入してください。
         </p>
         <form class="contactform" action="">
-          <label for="select-purpose">ご用件</label>
-          <select name="select-purpose" id="select-purpose">
-            <option value="select-purpose-product">
-              製品（仕様・見積書など）
-            </option>
-            <option value="select-purpose-repair">修理（購入済みの方）</option>
-            <option value="select-purpose-store">業販（販売代理など）</option>
-            <option value="select-purpose-others">その他</option>
-          </select>
-          <label for="select-product">商品名</label>
-          <select name="select-product" id="select-product">
-            <option disabled value="select-product-category-camera">
-              ー安全AIカメラシステムー
-            </option>
-            <option value="select-product-category-camera-acuc0004">
-              ACUC-0004 特殊車両用
-            </option>
-            <option value="select-product-category-camera-acsl0003">
-              ACSL-0003 大型トラック用
-            </option>
-            <option value="select-product-category-camera-acsl0001">
-              ACSL-0001 小型トラック用
-            </option>
-            <option disabled value="select-product-category-option">
-              ーオプションー
-            </option>
-            <option value="select-product-category-option-anam0001">
-              ANAM-0001 モニター
-            </option>
-            <option value="select-product-category-option-assc0001">
-              ASSC-0001 映像分割器
-            </option>
-            <option value="select-product-category-option-ampc0001">
-              AMPC-0001 3ｍ延長ケーブル
-            </option>
-            <option value="select-product-category-option-apss0001">
-              APSS-0001 走行信号発生器
-            </option>
-            <option disabled value="select-product-category-others">
-              ーその他ー
-            </option>
-            <option value="select-product-category-others-li">その他</option>
-          </select>
           <label for="name">お名前 <span>※</span></label>
           <div id="name">
             <p>性　</p>
@@ -225,69 +182,39 @@
 
             <input type="text" id="name-kana-mei" name="name" />
           </div>
-          <label for="select-kindof">お申込区分</label>
-          <select name="select-kindof" id="select-kindof">
-            <option value="select-kindof-houjin">法人</option>
-            <option value="select-kindof-kojin">個人</option>
-            <option value="select-kindof-kojinjigyousya">個人事業者</option>
-          </select>
+          <label for="phonenumber">お電話番号 <span>※</span> </label>
+
+          <input type="text" id="phonenumber" name="phonenumber" />
+
+          <label for="email">メールアドレス <span>※</span> </label>
+          <input type="email" id="email" name="email" />
+          <label for="email">メールアドレス(ご確認用) <span>※</span> </label>
+          <input type="email" id="email" name="email" />
+
           <label for="company">会社名</label>
           <input type="text" id="company" name="company" />
-          <label for="company-kana">会社名（全角カナ）</label>
-          <input type="text" id="company-kana" name="company" />
+
           <label for="company-part">所属部署名</label>
           <input type="text" id="company-part" name="company" />
-          <label for="company-part">業種</label>
-          <input type="text" id="company-part" name="company" />
-          <label for="postnumber"
-            >郵便番号
-            <span>※</span>
-          </label>
+
+          <label for="postnumber">郵便番号 </label>
           <input type="text" id="postnumber" name="zipcode" />
           <label for="address">ご住所</label>
           <div id="address">
-            <label for="address-district"
-              >都道府県
-              <span>※</span>
-            </label>
+            <label for="address-district">都道府県 </label>
             <input type="text" id="address-district" name="address" />
-            <label for="address-city"
-              >市区郡以下
-              <span>※</span>
-            </label>
+            <label for="address-city">市区郡以下 </label>
             <input type="text" id="address-city" name="address" />
             <label for="address-number">番地 </label>
             <input type="text" id="address-number" name="address" />
             <label for="address-building">建設名 </label>
             <input type="text" id="address-building" name="address" />
           </div>
-          <label for="phonenumber">お電話番号</label>
-          <input type="text" id="phonenumber" name="phonenumber" />
 
-          <label for="email">メールアドレス</label>
-          <input type="email" id="email" name="email" />
-          <label for="email">メールアドレス(ご確認用)</label>
-          <input type="email" id="email" name="email" />
-          <label for="buy"
-            >カメラの購入予定はされてますか？
-            <span>※</span>
-          </label>
-          <div id="buy">
-            <input type="radio" id="buy-yes" name="buy" /> はい
-            <input type="radio" id="buy-no" name="buy" /> いいえ
-          </div>
-          <label for="bought"
-            >現在アズミーのカメラは所有されていますか？
-            <span>※</span>
-          </label>
-          <div id="bought">
-            <input type="radio" id="bought-yes" name="bought" /> はい
-            <input type="radio" id="bought-no" name="bought" /> いいえ
-          </div>
           <p class="form-text">
             修理依頼の場合は下記の欄をご記入してください。
           </p>
-          <label for="storename">ご購入店舗</label>
+          <label for="storename">ご購入店</label>
           <input type="text" id="storename" name="storename" />
           <label for="date">ご購入日</label>
           <input
@@ -297,11 +224,7 @@
             name="date"
             value="2021-12-17"
           />
-          <label for="date">保証期間内のご確認</label>
-          <div id="bought">
-            <input type="radio" id="in" name="in" />期間内
-            <input type="radio" />期間外（なし）
-          </div>
+
           <label for="message">お問い合わせ内容</label>
           <textarea name="message" id="contact-message"></textarea>
           <input type="submit" value="送信する" id="contact-submit" />
