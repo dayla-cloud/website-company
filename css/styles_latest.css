@@ -1949,3 +1949,11 @@ span[class~="productdetail_subtitle"] {
   text-align: center;
   font-size: var(--small-font-size);
 }
+
+.hidden {
+  display: none;
+}
+
+.about_history_year_grid_box {
+  height: 270px;
+}
